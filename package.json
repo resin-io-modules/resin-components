@@ -135,6 +135,7 @@
     "marked": "^0.8.0",
     "mermaid": "8.4.0",
     "prop-types": "^15.7.2",
+    "rc-tooltip": "^4.0.1",
     "react-google-recaptcha": "^2.0.0-rc.1",
     "react-jsonschema-form": "^1.3.0",
     "react-notifications-component": "^2.2.3",
