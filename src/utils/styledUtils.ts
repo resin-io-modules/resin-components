@@ -19,3 +19,18 @@ export const emphasized = (props: { emphasized?: boolean; theme: Theme }) =>
 			props.emphasized ? props.theme.space[5] : props.theme.space[4],
 		)};
 	`;
+
+export const invertBreakpoint = (breakpoint: number) => {
+	return breakpoint - 0.01;
+};
+
+export const windowGlobal = typeof window !== 'undefined' && window;
+
+// Calculates the current window width in ems and returns it as a float
+export const getWindowWidth = () => {
+	if (!windowGlobal) {
+		return 0;
+	}
+
+	return windowGlobal.innerWidth;
+};

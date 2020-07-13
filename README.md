@@ -61,6 +61,7 @@ For an interactive demo of all components, see https://balena-io-modules.github.
 - [Filters](#filters)
 - [Fixed](#fixed)
 - [Flex](#flex)
+- [Header](#header)
 - [Heading](#heading)
 - [HighlightedName](#highlightedname)
 - [Img](#img)
@@ -431,6 +432,22 @@ Displays an element using [flexbox](https://developer.mozilla.org/en-US/docs/Web
 | `justifyContent`      | <code>string &#124; string[]</code> | - | - | Sets `justify-content`, if the value is an array, sets a responsive style corresponding to the theme's breakpoints
 | `flexDirection`      | <code>string &#124; string[]</code> | - | - | Sets `flex-direction`, if the value is an array, sets a responsive style corresponding to the theme's breakpoints
 | `flexWrap`      | <code>string &#124; string[]</code> | - | - | Sets `flex-wrap` css property
+### Header
+
+Display page header with Logo and navbar.
+
+[View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/Next/Header.js)
+
+#### Props
+
+| Name        | Type                                                                                            | Default | Required | Description                                                  |
+| ----------- | ----------------------------------------------------------------------------------------------- | ------- | -------- | ------------------------------------------------------------ |
+| `logo`      | `string`                                                                                        | -       | true     | Sets Brand Logo in header                                    |
+| `logoAlt`   | `string`                                                                                        | -       | true     | Brand Logo Alt Text                                          |
+| `rootRoute` | `string`                                                                                        | -       | true     | Brand Logo Root route for Links                              |
+| `routes`    | `{ title: string; showDividers?: boolean; path?: string; blank?: boolean; routes: Route[]; }[]` | -       | true     | List of links and sub links for nav                          |
+| `actions`   | `React.ReactElement`                                                                            | -       | true     | Additional menu buttons, for ex. login/dowload/signup button |
+
 ### Heading
 
 A component that displays a heading. By default an `<h3>` tag is used. The exact

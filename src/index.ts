@@ -62,6 +62,7 @@ export { default as Txt, TxtProps } from './components/Txt';
 export { default as Textarea, TextareaProps } from './components/Textarea';
 export { default as Img } from './components/Img';
 export { default as Heading } from './components/Heading';
+export { default as Header } from './components/Header';
 export {
 	NotificationsContainer,
 	notifications,
