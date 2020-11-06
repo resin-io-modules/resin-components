@@ -464,6 +464,34 @@ const jsonDataExamples = {
 			},
 		},
 	},
+	'An Avatar widget': {
+		value: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Jelly_cc11.jpg',
+		schema: {
+			type: 'string',
+		},
+		uiSchema: {
+			'ui:widget': 'Avatar',
+			'ui:options': {
+				firstName: 'Jelly',
+				lastName: 'Fish',
+				emphasized: true,
+			},
+		},
+	},
+	'An Avatar widget without image': {
+		value: '',
+		schema: {
+			type: 'string',
+		},
+		uiSchema: {
+			'ui:widget': 'Avatar',
+			'ui:options': {
+				firstName: 'Jelly',
+				lastName: 'Fish',
+				emphasized: true,
+			},
+		},
+	},
 	'A Tag widget': {
 		value: 'premium',
 		schema: {

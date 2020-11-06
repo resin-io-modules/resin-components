@@ -2304,6 +2304,183 @@ exports[`JsonSchemaRenderer component A uri field 1`] = `
 </div>
 `;
 
+exports[`JsonSchemaRenderer component An Avatar widget 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Jelly_cc11.jpg) no-repeat center center;
+  background-size: cover;
+  min-width: 0;
+  min-height: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 34px;
+  width: 34px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.c0 {
+  font-family: 'Source Sans Pro',Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  margin-bottom: 4px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  font-family: 'Source Sans Pro',Helvetica,sans-serif;
+  font-size: 14px;
+  color: #2A506F;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2 c3 c4 "
+  >
+    <div
+      className="c5 StyledAvatar-sc-1suyamb-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`JsonSchemaRenderer component An Avatar widget without image 1`] = `
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #b7bed3;
+  color: #444444;
+  min-width: 0;
+  min-height: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 34px;
+  width: 34px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.c0 {
+  font-family: 'Source Sans Pro',Helvetica,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.c2 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  margin-bottom: 4px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c6 {
+  color: white;
+}
+
+.c1 {
+  font-family: 'Source Sans Pro',Helvetica,sans-serif;
+  font-size: 14px;
+  color: #2A506F;
+}
+
+<div
+  className="c0 c1"
+>
+  <div
+    className="c2 c3 c4 "
+  >
+    
+    <div
+      className="c5 StyledAvatar-sc-1suyamb-1"
+    >
+      <div
+        className="c6"
+      >
+        JF
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`JsonSchemaRenderer component An Img widget 1`] = `
 .c0 {
   font-family: 'Source Sans Pro',Helvetica,sans-serif;

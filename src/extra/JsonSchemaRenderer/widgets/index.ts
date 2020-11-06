@@ -1,5 +1,6 @@
 import values from 'lodash/values';
 import ArrayWidget from './ArrayWidget';
+import AvatarWidget from './AvatarWidget';
 import BadgeWidget from './BadgeWidget';
 import ButtonGroupWidget from './ButtonGroupWidget';
 import ButtonWidget from './ButtonWidget';
@@ -41,6 +42,7 @@ const allWidgets: WidgetLookup = {};
 
 [
 	ArrayWidget,
+	AvatarWidget,
 	BadgeWidget,
 	ButtonGroupWidget,
 	ButtonWidget,
