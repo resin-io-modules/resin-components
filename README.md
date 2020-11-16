@@ -87,8 +87,8 @@ For an interactive demo of all components, see https://balena-io-modules.github.
 - [Tabs](#tabs)
 - [Tag](#tag)
 - [Terminal](#terminal)
-- [TextWithCopy](#textwithcopy)
 - [Textarea](#textarea)
+- [TextWithCopy](#textwithcopy)
 - [Tooltips](#tooltips)
 - [Txt](#txt)
 - [JsonSchemaRenderer](#jsonschemarenderer)
@@ -214,7 +214,7 @@ The basic building block of a rendition application.
 | `primary`     | `boolean` | -         | -          | If true, use the `primary` theme color               |
 | `secondary`   | `boolean` | -         | -          | If true, use the `secondary` theme color             |
 | `tertiary`    | `boolean` | -         | -          | If true, use the `tertiary` theme color              |
-| `quarternary` | `boolean` | -         | -          | If true, use the `quarternary` theme color           |
+| `quartenary`  | `boolean` | -         | -          | If true, use the `quartenary` theme color           |
 | `danger`      | `boolean` | -         | -          | If true, use the `danger` theme color                |
 | `warning`     | `boolean` | -         | -          | If true, use the `warning` theme color               |
 | `success`     | `boolean` | -         | -          | If true, use the `success` theme color               |
@@ -1038,19 +1038,6 @@ instance instead of creating a new one.
 | `nonInteractive`    | `boolean` | -         | -          | If true, the component will go into a "read-only" state, useful for displaying logs |
 | `color`    | `string` | -         | -          | A CSS color string that sets the background color of the terminal |
 | `config`    | `object` | -         | -          | Startup options to pass to the tty instance, see the [xterm.js options](https://github.com/xtermjs/xterm.js/blob/master/typings/xterm.d.ts#L24) for more detail |
-### TextWithCopy
-
-Displays text that can be copied to the clipboard.
-
-[View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/TextWithCopy/story.js)
-
-#### Props
-
-| Name          | Type      | Default   | Required   | Description                                          |
-| ------ | ------ | --------- | ---------- | ------------- |
-| `copy`      | `string` | -         | ✓          | The value that should be copied to the clipboard
-| `showCopyButton`      | <code>'hover' &#124; 'always'</code> | - | - | Optionally show the copy button on hover or always show the button
-
 ### Textarea
 
 [View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/Textarea/story.js)
@@ -1069,6 +1056,19 @@ Displays text that can be copied to the clipboard.
 
 The attributes of a [`<textarea>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) element are also available.
 
+
+### TextWithCopy
+
+Displays text that can be copied to the clipboard.
+
+[View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/TextWithCopy/story.js)
+
+#### Props
+
+| Name          | Type      | Default   | Required   | Description                                          |
+| ------ | ------ | --------- | ---------- | ------------- |
+| `copy`      | `string` | -         | ✓          | The value that should be copied to the clipboard
+| `showCopyButton`      | <code>'hover' &#124; 'always'</code> | - | - | Optionally show the copy button on hover or always show the button
 
 ### Tooltips
 

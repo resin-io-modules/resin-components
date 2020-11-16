@@ -9,7 +9,7 @@
 | `primary`     | `boolean` | -         | -          | If true, use the `primary` theme color               |
 | `secondary`   | `boolean` | -         | -          | If true, use the `secondary` theme color             |
 | `tertiary`    | `boolean` | -         | -          | If true, use the `tertiary` theme color              |
-| `quarternary` | `boolean` | -         | -          | If true, use the `quarternary` theme color           |
+| `quartenary`  | `boolean` | -         | -          | If true, use the `quartenary` theme color           |
 | `danger`      | `boolean` | -         | -          | If true, use the `danger` theme color                |
 | `warning`     | `boolean` | -         | -          | If true, use the `warning` theme color               |
 | `success`     | `boolean` | -         | -          | If true, use the `success` theme color               |
