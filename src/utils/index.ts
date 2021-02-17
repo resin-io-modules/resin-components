@@ -1,3 +1,4 @@
+import { Dictionary, groupBy, ValueIteratee } from 'lodash';
 import * as React from 'react';
 export * from './colorUtils';
 export * from './schemaUtils';
@@ -41,4 +42,20 @@ export const withConditional = <TProps extends {}>(
 			return React.createElement(Component, { ...props, ref });
 		});
 	};
+};
+
+export const sortedGroupBy = <T>(
+	collection: T[] | null | undefined,
+	iteratee: ValueIteratee<T>,
+	orderedKeys: string[],
+): Dictionary<T[]> => {
+	const groupedItems = groupBy(collection, iteratee);
+
+	const sortedGroupedItems: typeof groupedItems = Object.create(null);
+	for (const key of orderedKeys) {
+		if (groupedItems[key]) {
+			sortedGroupedItems[key] = groupedItems[key];
+		}
+	}
+	return sortedGroupedItems;
 };

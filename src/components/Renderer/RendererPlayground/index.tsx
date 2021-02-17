@@ -216,13 +216,20 @@ const RendererPlaygroundBase = ({
 				<ResultCard
 					flex={1}
 					{...commonCardProps}
-					title="Result"
-					cta={
-						<Checkbox
-							checked={validate}
-							label="Validate"
-							onChange={(e) => setValidate(e.target.checked)}
-						/>
+					header={
+						<Flex
+							flex="0 0 auto"
+							justifyContent="space-between"
+							alignItems="center"
+						>
+							<Heading.h3>Result</Heading.h3>
+							<Checkbox
+								ml={2}
+								checked={validate}
+								label="Validate"
+								onChange={(e) => setValidate(e.target.checked)}
+							/>
+						</Flex>
 					}
 				>
 					<Renderer

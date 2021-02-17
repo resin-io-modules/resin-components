@@ -1,82 +1,84 @@
-import map from 'lodash/map';
 import * as React from 'react';
 import styled from 'styled-components';
-import { RenditionSystemProps } from '../../common-types';
-
+import {
+	ActionButtonDefinition,
+	RenditionSystemProps,
+} from '../../common-types';
 import asRendition from '../../asRendition';
 import { DismissableContainer } from '../../internal/DismissableContainer';
-import { Box } from '../Box';
-import { Divider } from '../Divider';
 import { Flex, FlexProps } from '../Flex';
 import { Heading } from '../Heading';
 import { useBreakpoint } from '../../hooks/useBreakpoint';
+import { Divider } from '../Divider';
+import { ActionButtonGroup } from '../../internal/ActionButtonGroup';
 
 const Wrapper = styled(DismissableContainer)<WrapperProps>`
 	& {
-		padding: ${(props) => (props.small ? '24px' : '32px 44px')};
+		padding: ${(props) => (props.emphasized ? '32px 44px' : '24px')};
 	}
 `;
 
 const BaseCard = ({
-	title,
-	cta,
-	rows,
+	header,
 	children,
-	small,
+	emphasized,
+	actions,
 	...props
 }: InternalCardProps) => {
-	const hasHeader = title || cta;
-	const isSmall = useBreakpoint(small);
+	const isEmphasized = useBreakpoint(emphasized);
 
-	const Header = hasHeader && (
-		<React.Fragment>
-			<Flex justifyContent="space-between" alignItems="center">
-				<Heading.h5 fontSize={4}>{title}</Heading.h5>
-				{cta}
+	const Header =
+		header &&
+		(typeof header === 'string' ? (
+			<Flex
+				mb={2}
+				flex="0 0 auto"
+				justifyContent="space-between"
+				alignItems="center"
+			>
+				<Heading.h3>{header}</Heading.h3>
 			</Flex>
-			<Divider my={2} />
-		</React.Fragment>
-	);
-
-	const Rows =
-		rows &&
-		map(rows, (row, index: number) => (
-			<Box key={index} fontSize={2}>
-				{index > 0 && <Divider />}
-				{row}
-			</Box>
+		) : (
+			header
 		));
 
 	const Body = children && (
-		<Box fontSize={2} height="100%">
+		<Flex flex="1" flexDirection="column">
 			{children}
-		</Box>
+		</Flex>
+	);
+
+	const Actions = actions && (
+		<Flex flexDirection="column">
+			<Divider mb={2} mt={3} type="dashed" />
+			<Flex flexWrap="wrap" flex="0 0 auto" justifyContent="flex-end">
+				<ActionButtonGroup actions={actions} />
+			</Flex>
+		</Flex>
 	);
 
 	return (
-		<Wrapper small={isSmall} {...props}>
-			<Box width="100%">
+		<Wrapper emphasized={isEmphasized} {...props}>
+			<Flex flexDirection="column" flex="1">
 				{Header}
-				{Rows}
 				{Body}
-			</Box>
+				{Actions}
+			</Flex>
 		</Wrapper>
 	);
 };
 
 interface WrapperProps extends FlexProps {
-	small?: boolean | boolean[];
+	emphasized?: boolean | boolean[];
 }
 
-export interface InternalCardProps extends WrapperProps {
-	/** The title of the card */
-	title?: string;
-	/** React component added to the header */
-	cta?: JSX.Element;
-	/** Subsections separated by a horizontal separator */
-	rows?: JSX.Element[];
+export interface InternalCardProps extends Omit<WrapperProps, 'title'> {
+	/** The header of the card */
+	header?: string | JSX.Element;
 	/** Any content that is internally wrapped in a Box */
 	children?: any;
+	/** Buttons placed on the bottom of the card */
+	actions?: ActionButtonDefinition[];
 }
 
 export type CardProps = InternalCardProps & RenditionSystemProps;

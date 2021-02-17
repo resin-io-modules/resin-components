@@ -57,10 +57,17 @@ class FilterSummary extends React.Component<
 			<Box p={3} mt={3} width="100%" bg="quartenary.light">
 				{this.state.showForm && (
 					<Modal
-						title="Save current view"
-						cancel={() => this.setState({ showForm: false })}
-						done={this.save}
-						action="Save"
+						header="Save current view"
+						actions={[
+							{
+								title: 'Save',
+								onTriggerAction: this.save,
+							},
+							{
+								title: 'Cancel',
+								onTriggerAction: () => this.setState({ showForm: false }),
+							},
+						]}
 					>
 						<form onSubmit={this.save}>
 							{!!scopes && scopes.length > 1 && (

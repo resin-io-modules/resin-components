@@ -21,12 +21,12 @@ const generateTableData = () => {
 				<pre>{JSON.stringify(sanitizerOptions, null, 2)}</pre>
 			),
 			Original: (
-				<Card small>
+				<Card>
 					<Markdown>{markdown}</Markdown>
 				</Card>
 			),
 			Customized: (
-				<Card small>
+				<Card>
 					<Markdown sanitizerOptions={customSanitizerOptions}>
 						{markdown}
 					</Markdown>

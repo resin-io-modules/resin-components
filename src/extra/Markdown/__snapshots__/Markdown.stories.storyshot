@@ -3,13 +3,13 @@
 exports[`Storyshots Extra/Markdown Customized 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-irlOZD IlvTR"
+      class="sc-iGctRS fBeMOH"
     >
       <div
-        class="sc-eWvPJL hPkwYF"
+        class="sc-irlOZD gYHbjV"
       >
         <div
           data-display="table-head"
@@ -64,17 +64,17 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
                 class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
               >
                 <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+                  class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                 >
                   <div
-                    class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+                    class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                   >
                     <div
-                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
                     >
                       <div>
                         <h1
-                          class="sc-gWHgXt eCVPSB sc-citwmv gCCLOD"
+                          class="sc-iktFzd ePMNkU sc-hiSbYr hwRkKu"
                         >
                           A title
                         </h1>
@@ -101,13 +101,13 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
                 class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
               >
                 <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+                  class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                 >
                   <div
-                    class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+                    class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                   >
                     <div
-                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
                     >
                       <div>
                         A title
@@ -155,17 +155,17 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
                 class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
               >
                 <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+                  class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                 >
                   <div
-                    class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+                    class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                   >
                     <div
-                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
                     >
                       <div>
                         <h1
-                          class="sc-gWHgXt eCVPSB sc-citwmv gCCLOD"
+                          class="sc-iktFzd ePMNkU sc-hiSbYr hwRkKu"
                         >
                           A title
                         </h1>
@@ -192,13 +192,13 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
                 class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
               >
                 <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+                  class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                 >
                   <div
-                    class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+                    class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                   >
                     <div
-                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
                     >
                       <div>
                         A title
@@ -240,17 +240,17 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
                 class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
               >
                 <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+                  class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                 >
                   <div
-                    class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+                    class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                   >
                     <div
-                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
                     >
                       <div>
                         <h1
-                          class="sc-gWHgXt eCVPSB sc-citwmv gCCLOD"
+                          class="sc-iktFzd ePMNkU sc-hiSbYr hwRkKu"
                         >
                           A title
                         </h1>
@@ -277,17 +277,17 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
                 class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
               >
                 <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+                  class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                 >
                   <div
-                    class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+                    class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
                   >
                     <div
-                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+                      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
                     >
                       <div>
                         <h1
-                          class="sc-gWHgXt eCVPSB sc-citwmv gCCLOD"
+                          class="sc-iktFzd ePMNkU sc-hiSbYr hwRkKu"
                         >
                           A title
                         </h1>
@@ -309,14 +309,14 @@ exports[`Storyshots Extra/Markdown Customized 1`] = `
 exports[`Storyshots Extra/Markdown Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
     >
       <div>
         <h1
-          class="sc-gWHgXt eCVPSB sc-citwmv gCCLOD"
+          class="sc-iktFzd ePMNkU sc-hiSbYr hwRkKu"
         >
           Markdown
         </h1>
@@ -334,14 +334,14 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Headers
         </h2>
         
 
         <h1
-          class="sc-gWHgXt eCVPSB sc-citwmv gCCLOD"
+          class="sc-iktFzd ePMNkU sc-hiSbYr hwRkKu"
         >
           This is an 
           <code>
@@ -352,7 +352,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           This is an 
           <code>
@@ -363,7 +363,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h6
-          class="sc-gWHgXt vKAIQ sc-eggNIi iUGsQu"
+          class="sc-iktFzd bZzDXR sc-bZSQDF fvMmhJ"
         >
           This is an 
           <code>
@@ -374,7 +374,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Emphasis
         </h2>
@@ -424,14 +424,14 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Lists
         </h2>
         
 
         <h3
-          class="sc-gWHgXt eCVPSB sc-bZSQDF QBWsK"
+          class="sc-iktFzd ePMNkU sc-cBNfnY hcRIY"
         >
           Unordered
         </h3>
@@ -471,7 +471,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h3
-          class="sc-gWHgXt eCVPSB sc-bZSQDF QBWsK"
+          class="sc-iktFzd ePMNkU sc-cBNfnY hcRIY"
         >
           Ordered
         </h3>
@@ -516,7 +516,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Images
         </h2>
@@ -533,7 +533,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Links
         </h2>
@@ -543,7 +543,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
           class="sc-fKFyDc jHCVxA sc-cxFLnm kkkmRH"
         >
           <a
-            class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+            class="sc-bXDlPE lhITcI sc-eGCarw CequI"
             color="primary.main"
             href="http://github.com"
           >
@@ -557,7 +557,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
           class="sc-fKFyDc jHCVxA sc-cxFLnm kkkmRH"
         >
           <a
-            class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+            class="sc-bXDlPE lhITcI sc-eGCarw CequI"
             color="primary.main"
             href="http://github.com"
           >
@@ -567,7 +567,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Blockquotes
         </h2>
@@ -594,7 +594,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Inline code
         </h2>
@@ -615,7 +615,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Code blocks
         </h2>
@@ -712,7 +712,7 @@ const foo = () =&gt; {
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Task Lists
         </h2>
@@ -762,7 +762,7 @@ const foo = () =&gt; {
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Tables
         </h2>
@@ -818,7 +818,7 @@ const foo = () =&gt; {
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Strikethrough
         </h2>
@@ -845,7 +845,7 @@ const foo = () =&gt; {
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Inline HTML
         </h2>
@@ -881,7 +881,7 @@ const foo = () =&gt; {
           
 
           <a
-            class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+            class="sc-bXDlPE lhITcI sc-eGCarw CequI"
             color="primary.main"
             href="http://github.com/"
           >
@@ -891,7 +891,7 @@ const foo = () =&gt; {
         
 
         <h2
-          class="sc-gWHgXt eCVPSB sc-jcVebW fcdKNU"
+          class="sc-iktFzd ePMNkU sc-gWHgXt goapnY"
         >
           Keyboard keys
         </h2>
@@ -925,10 +925,10 @@ const foo = () =&gt; {
 exports[`Storyshots Extra/Markdown With Decorators 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hYZPRl gyTNli"
+      class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-dRPiIx qUHcx"
     >
       <div>
         <p
@@ -944,7 +944,7 @@ exports[`Storyshots Extra/Markdown With Decorators 1`] = `
              foo @bad@bad 
           </span>
           <a
-            class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+            class="sc-bXDlPE lhITcI sc-eGCarw CequI"
             color="primary.main"
             href="https://github.com"
           >

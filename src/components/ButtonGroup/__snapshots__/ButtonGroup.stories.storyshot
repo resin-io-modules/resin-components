@@ -3,7 +3,7 @@
 exports[`Storyshots Core/ButtonGroup Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-kLgntA cLDXoV bYsbUY"
@@ -34,7 +34,7 @@ exports[`Storyshots Core/ButtonGroup Default 1`] = `
 exports[`Storyshots Core/ButtonGroup With Icon Button 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-kLgntA cLDXoV bYsbUY"

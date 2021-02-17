@@ -3,7 +3,35 @@
 exports[`Storyshots Core/Card Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
+  >
+    <div
+      style="width: 400px; height: 400px;"
+    >
+      <div
+        class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
+      >
+        <div
+          class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+        >
+          <div
+            class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+  scelerisque euismod risus at gravida. Pellentesque a nunc semper,
+  ultrices lacus nec, mattis mauris
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core/Card Emphasized 1`] = `
+<div>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       style="width: 400px; height: 400px;"
@@ -12,10 +40,19 @@ exports[`Storyshots Core/Card Default 1`] = `
         class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ ceEQCj sc-jNMdTA eIbWGx"
       >
         <div
-          class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+          class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
         >
           <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+            class="sc-gKsewC cFuckZ sc-iBPRYJ bBwSze sc-hHftDr kUtBaJ"
+          >
+            <h3
+              class="sc-iktFzd ePMNkU sc-cBNfnY hcRIY"
+            >
+              Card with title
+            </h3>
+          </div>
+          <div
+            class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
   scelerisque euismod risus at gravida. Pellentesque a nunc semper,
@@ -31,7 +68,35 @@ exports[`Storyshots Core/Card Default 1`] = `
 exports[`Storyshots Core/Card Small 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
+  >
+    <div
+      style="width: 400px; height: 400px;"
+    >
+      <div
+        class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ ceEQCj sc-jNMdTA eIbWGx"
+      >
+        <div
+          class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+        >
+          <div
+            class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+  scelerisque euismod risus at gravida. Pellentesque a nunc semper,
+  ultrices lacus nec, mattis mauris
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core/Card With Action Header 1`] = `
+<div>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       style="width: 400px; height: 400px;"
@@ -40,14 +105,90 @@ exports[`Storyshots Core/Card Small 1`] = `
         class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
       >
         <div
-          class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+          class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
         >
           <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+            class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV"
+          >
+            <h3
+              class="sc-iktFzd ePMNkU sc-cBNfnY hcRIY"
+            >
+              Card With action title
+            </h3>
+            <button
+              class="StyledButton-sc-323bzc-0 fVClA-D sc-bqyKva sc-bkzZxe gjQfnS dvvpJt sc-dIUggk fiTZeL"
+              type="button"
+            >
+              Update
+            </button>
+          </div>
+          <div
+            class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
   scelerisque euismod risus at gravida. Pellentesque a nunc semper,
   ultrices lacus nec, mattis mauris
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core/Card With Actions 1`] = `
+<div>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
+  >
+    <div
+      style="width: 400px; height: 400px;"
+    >
+      <div
+        class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA bKdSdq"
+      >
+        <div
+          class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+        >
+          <div
+            class="sc-gKsewC cFuckZ sc-iBPRYJ bBwSze sc-hHftDr kUtBaJ"
+          >
+            <h3
+              class="sc-iktFzd ePMNkU sc-cBNfnY hcRIY"
+            >
+              Card with Actions
+            </h3>
+          </div>
+          <div
+            class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+  scelerisque euismod risus at gravida. Pellentesque a nunc semper,
+  ultrices lacus nec, mattis mauris 
+          </div>
+          <div
+            class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
+          >
+            <hr
+              class="sc-iUuytg kDfphZ sc-eggNIi kPInZt"
+              type="dashed"
+            />
+            <div
+              class="sc-gKsewC cFuckZ sc-iBPRYJ dWRxlP sc-hHftDr fqfxeY"
+            >
+              <button
+                class="StyledButton-sc-323bzc-0 fGJlAh sc-bqyKva sc-kstrdz gjQfnS FUwNf sc-dIUggk gvyQgi"
+                type="button"
+              >
+                Normal action
+              </button>
+              <button
+                class="StyledButton-sc-323bzc-0 bxeVfd sc-bqyKva sc-kstrdz gjQfnS ekgxxv sc-dIUggk gvyQgi"
+                type="button"
+              >
+                Danger action
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -59,169 +200,32 @@ exports[`Storyshots Core/Card Small 1`] = `
 exports[`Storyshots Core/Card With Header 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       style="width: 400px; height: 400px;"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ ceEQCj sc-jNMdTA eIbWGx"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ kyJVgU sc-jNMdTA eIbWGx"
       >
         <div
-          class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
+          class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
         >
           <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr kUtBaJ"
+            class="sc-gKsewC cFuckZ sc-iBPRYJ bBwSze sc-hHftDr kUtBaJ"
           >
-            <h5
-              class="sc-gWHgXt vKAIQ sc-iBaPrD uJYVl"
+            <h3
+              class="sc-iktFzd ePMNkU sc-cBNfnY hcRIY"
             >
-              Card with Button
-            </h5>
-            <button
-              class="StyledButton-sc-323bzc-0 fVClA-D sc-bqyKva sc-bkzZxe gjQfnS dvvpJt sc-dIUggk YDvpG"
-              type="button"
-            >
-              Update
-            </button>
+              Card with title
+            </h3>
           </div>
-          <hr
-            class="sc-iktFzd cJCAjm sc-hiSbYr gLVHRe"
-          />
           <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ kKemJS"
+            class="sc-gKsewC dWcnb sc-iBPRYJ dWRxlP sc-hHftDr iIBJBt"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
   scelerisque euismod risus at gravida. Pellentesque a nunc semper,
   ultrices lacus nec, mattis mauris
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Core/Card With Rows 1`] = `
-<div>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
-  >
-    <div
-      style="width: 400px; height: 400px;"
-    >
-      <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV gKJALV sc-cTkwdZ ceEQCj sc-jNMdTA eIbWGx"
-      >
-        <div
-          class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI"
-        >
-          <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr kUtBaJ"
-          >
-            <h5
-              class="sc-gWHgXt vKAIQ sc-iBaPrD uJYVl"
-            >
-              Card with Button
-            </h5>
-            <a
-              class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
-              color="primary.main"
-              href="https://balena.io"
-            >
-              Link
-            </a>
-          </div>
-          <hr
-            class="sc-iktFzd cJCAjm sc-hiSbYr gLVHRe"
-          />
-          <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI"
-          >
-            <div>
-              Lorem Ipsum dolor si amet
-            </div>
-          </div>
-          <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI"
-          >
-            <hr
-              class="sc-iktFzd cJCAjm sc-hiSbYr ioExYC"
-            />
-            <a
-              class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
-              color="primary.main"
-              href="www.balena.io"
-            >
-              Link
-            </a>
-          </div>
-          <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI"
-          >
-            <hr
-              class="sc-iktFzd cJCAjm sc-hiSbYr ioExYC"
-            />
-            <span
-              class="sc-fKFyDc jHCVxA sc-iwyYcG bsaCCL sc-kiYtDG htJzkp text-with-copy"
-              title="This value has been copied to your clipboard!"
-            >
-              <span
-                class="text-with-copy__content"
-              >
-                Row with Copy component
-              </span>
-              <span
-                class="text-with-copy__copy_wrapper"
-              >
-                <div
-                  class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP text-with-copy__copy"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="svg-inline--fa fa-copy fa-w-14 "
-                    data-icon="copy"
-                    data-prefix="far"
-                    focusable="false"
-                    role="img"
-                    viewBox="0 0 448 512"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
-              </span>
-            </span>
-          </div>
-          <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI"
-          >
-            <hr
-              class="sc-iktFzd cJCAjm sc-hiSbYr ioExYC"
-            />
-            <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr jkLErl"
-            >
-              <div>
-                Row with
-              </div>
-              <div>
-                Flex
-              </div>
-            </div>
-          </div>
-          <div
-            class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI"
-          >
-            <hr
-              class="sc-iktFzd cJCAjm sc-hiSbYr ioExYC"
-            />
-            <div>
-              Lorem Ipsum dolor si amet
-            </div>
           </div>
         </div>
       </div>

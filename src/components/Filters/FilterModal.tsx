@@ -103,10 +103,17 @@ export const FilterModal = ({
 	};
 	return (
 		<Modal
-			title="Filter by"
-			cancel={onClose}
-			done={() => addFilter(filters)}
-			action="Save"
+			header="Filter by"
+			actions={[
+				{
+					title: 'Save',
+					onTriggerAction: () => addFilter(filters),
+				},
+				{
+					title: 'Cancel',
+					onTriggerAction: onClose,
+				},
+			]}
 		>
 			{filters.map(({ field, operator, value }, index) => {
 				const operators = SchemaSieve.getOperators(schema, field);

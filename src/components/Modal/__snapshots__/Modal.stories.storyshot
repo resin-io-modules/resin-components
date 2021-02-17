@@ -1,28 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Core/Modal Custom Action 1`] = `
-<div>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
-  >
-    <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
-    >
-      <button
-        class="StyledButton-sc-323bzc-0 fGJlAh sc-bqyKva sc-kstrdz gjQfnS FUwNf sc-dIUggk YDvpG"
-        type="button"
-      >
-        Open Modal
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Core/Modal Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
@@ -41,7 +22,7 @@ exports[`Storyshots Core/Modal Default 1`] = `
 exports[`Storyshots Core/Modal Nested 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
@@ -57,10 +38,10 @@ exports[`Storyshots Core/Modal Nested 1`] = `
 </div>
 `;
 
-exports[`Storyshots Core/Modal No Cancel 1`] = `
+exports[`Storyshots Core/Modal With Action Buttons 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
@@ -79,26 +60,7 @@ exports[`Storyshots Core/Modal No Cancel 1`] = `
 exports[`Storyshots Core/Modal With Custom Width 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
-  >
-    <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
-    >
-      <button
-        class="StyledButton-sc-323bzc-0 fGJlAh sc-bqyKva sc-kstrdz gjQfnS FUwNf sc-dIUggk YDvpG"
-        type="button"
-      >
-        Open Modal
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Core/Modal With Customized Buttons 1`] = `
-<div>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
@@ -117,7 +79,7 @@ exports[`Storyshots Core/Modal With Customized Buttons 1`] = `
 exports[`Storyshots Core/Modal With Multielement Title 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
@@ -136,26 +98,7 @@ exports[`Storyshots Core/Modal With Multielement Title 1`] = `
 exports[`Storyshots Core/Modal With Overflowing Content 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
-  >
-    <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
-    >
-      <button
-        class="StyledButton-sc-323bzc-0 fGJlAh sc-bqyKva sc-kstrdz gjQfnS FUwNf sc-dIUggk YDvpG"
-        type="button"
-      >
-        Open Modal
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Core/Modal With Title Details 1`] = `
-<div>
-  <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
@@ -174,7 +117,26 @@ exports[`Storyshots Core/Modal With Title Details 1`] = `
 exports[`Storyshots Core/Modal With Tooltip 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
+  >
+    <div
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"
+    >
+      <button
+        class="StyledButton-sc-323bzc-0 fGJlAh sc-bqyKva sc-kstrdz gjQfnS FUwNf sc-dIUggk YDvpG"
+        type="button"
+      >
+        Open Modal
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Core/Modal Without Actions 1`] = `
+<div>
+  <div
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP"

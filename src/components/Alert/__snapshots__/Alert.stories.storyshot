@@ -3,7 +3,7 @@
 exports[`Storyshots Core/Alert Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ ipiHMM sc-hHftDr sc-dmlrTW cLDXoV cbtefT sc-lmoMRL cGXAYQ"
@@ -49,7 +49,7 @@ exports[`Storyshots Core/Alert Default 1`] = `
 exports[`Storyshots Core/Alert Emphasized 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dQsSLq sc-hHftDr sc-dmlrTW cLDXoV hjYAKL sc-lmoMRL cGXAYQ"
@@ -95,7 +95,7 @@ exports[`Storyshots Core/Alert Emphasized 1`] = `
 exports[`Storyshots Core/Alert Plaintext 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-lmoMRL cGXAYQ"
@@ -132,7 +132,7 @@ exports[`Storyshots Core/Alert Plaintext 1`] = `
 exports[`Storyshots Core/Alert With Link 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ ipiHMM sc-hHftDr sc-dmlrTW cLDXoV cbtefT sc-lmoMRL cGXAYQ"
@@ -169,7 +169,7 @@ exports[`Storyshots Core/Alert With Link 1`] = `
         >
           With a 
           <a
-            class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+            class="sc-bXDlPE lhITcI sc-eGCarw CequI"
             color="primary.main"
             href="test"
           >
@@ -185,7 +185,7 @@ exports[`Storyshots Core/Alert With Link 1`] = `
 exports[`Storyshots Core/Alert Without Dismiss 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ ipiHMM sc-hHftDr sc-dmlrTW cLDXoV cbtefT sc-lmoMRL cGXAYQ"
@@ -231,7 +231,7 @@ exports[`Storyshots Core/Alert Without Dismiss 1`] = `
 exports[`Storyshots Core/Alert Without Prefix 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ ipiHMM sc-hHftDr sc-dmlrTW cLDXoV cbtefT sc-lmoMRL cGXAYQ"

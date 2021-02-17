@@ -3,10 +3,10 @@
 exports[`Storyshots Core/Steps Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi gKJALV sc-fHYxKZ fcysqr"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi gKJALV sc-fWPcDo cA-dlpk"
     >
       <div
         class="sc-gKsewC cgpPfo sc-iBPRYJ cILJJc sc-hHftDr bRrPDa"
@@ -18,7 +18,7 @@ exports[`Storyshots Core/Steps Default 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -76,7 +76,7 @@ exports[`Storyshots Core/Steps Default 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -134,7 +134,7 @@ exports[`Storyshots Core/Steps Default 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -168,10 +168,10 @@ exports[`Storyshots Core/Steps Default 1`] = `
 exports[`Storyshots Core/Steps Ordered 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi gKJALV sc-fHYxKZ fcysqr"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi gKJALV sc-fWPcDo cA-dlpk"
     >
       <div
         class="sc-gKsewC cgpPfo sc-iBPRYJ cILJJc sc-hHftDr bRrPDa"
@@ -183,7 +183,7 @@ exports[`Storyshots Core/Steps Ordered 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -241,7 +241,7 @@ exports[`Storyshots Core/Steps Ordered 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ gCUzdd sc-hHftDr sc-hjWSAi cLDXoV GWHGs fa-layers"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ gCUzdd sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ fa-layers"
             >
               <svg
                 aria-hidden="true"
@@ -259,7 +259,7 @@ exports[`Storyshots Core/Steps Ordered 1`] = `
                 />
               </svg>
               <div
-                class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-gVgnHT bSNzSd fa-layers-text fa-inverse"
+                class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hjWSAi dIEIaP fa-layers-text fa-inverse"
               >
                 2
               </div>
@@ -304,13 +304,13 @@ exports[`Storyshots Core/Steps Ordered 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dStBGr sc-hHftDr sc-hjWSAi cLDXoV GWHGs fa-layers"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dStBGr sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ fa-layers"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-fWPcDo jrPWli"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-gVgnHT wNzeP"
               />
               <div
-                class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-gVgnHT bSNzSd fa-layers-text"
+                class="sc-fKFyDc jHCVxA sc-bBXqnf kYwmpI sc-hjWSAi dIEIaP fa-layers-text"
               >
                 3
               </div>
@@ -331,10 +331,10 @@ exports[`Storyshots Core/Steps Ordered 1`] = `
 exports[`Storyshots Core/Steps With Custom Title 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi gKJALV sc-fHYxKZ fcysqr"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi gKJALV sc-fWPcDo cA-dlpk"
     >
       <div
         class="sc-gKsewC cgpPfo sc-iBPRYJ jDRXQs sc-hHftDr kFVJVF"
@@ -359,7 +359,7 @@ exports[`Storyshots Core/Steps With Custom Title 1`] = `
           </svg>
         </div>
         <h6
-          class="sc-gWHgXt vKAIQ sc-eggNIi bmOwTH"
+          class="sc-iktFzd bZzDXR sc-bZSQDF GiOZA"
         >
           Beginners Guide
         </h6>
@@ -374,7 +374,7 @@ exports[`Storyshots Core/Steps With Custom Title 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -432,7 +432,7 @@ exports[`Storyshots Core/Steps With Custom Title 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -490,7 +490,7 @@ exports[`Storyshots Core/Steps With Custom Title 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -524,10 +524,10 @@ exports[`Storyshots Core/Steps With Custom Title 1`] = `
 exports[`Storyshots Core/Steps Without Borders 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi jifnFy sc-fHYxKZ fcysqr"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW fLUTfi jifnFy sc-fWPcDo cA-dlpk"
     >
       <div
         class="sc-gKsewC cgpPfo sc-iBPRYJ cILJJc sc-hHftDr bRrPDa"
@@ -539,7 +539,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dzgPqC sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -558,7 +558,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
               </svg>
             </div>
             <a
-              class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+              class="sc-bXDlPE lhITcI sc-eGCarw CequI"
               color="primary.main"
             >
               Doesn't have
@@ -598,7 +598,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dStBGr sc-hHftDr sc-hjWSAi cLDXoV GWHGs"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dStBGr sc-hHftDr sc-cbDGPM cLDXoV jfcZuZ"
             >
               <svg
                 aria-hidden="true"
@@ -617,7 +617,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
               </svg>
             </div>
             <a
-              class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+              class="sc-bXDlPE lhITcI sc-eGCarw CequI"
               color="primary.main"
             >
               Title or dismiss button
@@ -657,7 +657,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
             class="sc-gKsewC cgpPfo sc-iBPRYJ iTdmGI sc-hHftDr fYuNSV"
           >
             <a
-              class="sc-eGCarw kBARfK sc-ctaXAZ bvFpzE"
+              class="sc-bXDlPE lhITcI sc-eGCarw CequI"
               color="primary.main"
             >
               That's it (no icon)

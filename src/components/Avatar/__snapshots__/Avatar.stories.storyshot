@@ -3,11 +3,11 @@
 exports[`Storyshots Core/Avatar Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     
     <div
-      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-jLiVlK jjSmb"
+      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-iWFSnp dyTeJE"
     >
       <svg
         aria-hidden="true"
@@ -33,10 +33,10 @@ exports[`Storyshots Core/Avatar Default 1`] = `
 exports[`Storyshots Core/Avatar Emphasized 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dKvtcX StyledAvatar-sc-1suyamb-1 sc-jLiVlK jjSmb"
+      class="StyledBox-sc-13pk1d4-0 dKvtcX StyledAvatar-sc-1suyamb-1 sc-iWFSnp dyTeJE"
     >
       <div
         class="sc-fKFyDc jHCVxA sc-bBXqnf dtyrhz"
@@ -51,10 +51,10 @@ exports[`Storyshots Core/Avatar Emphasized 1`] = `
 exports[`Storyshots Core/Avatar With First Name 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-jLiVlK jjSmb"
+      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-iWFSnp dyTeJE"
     >
       <div
         class="sc-fKFyDc jHCVxA sc-bBXqnf dtyrhz"
@@ -69,10 +69,10 @@ exports[`Storyshots Core/Avatar With First Name 1`] = `
 exports[`Storyshots Core/Avatar With Full Name 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-jLiVlK jjSmb"
+      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-iWFSnp dyTeJE"
     >
       <div
         class="sc-fKFyDc jHCVxA sc-bBXqnf dtyrhz"
@@ -87,10 +87,10 @@ exports[`Storyshots Core/Avatar With Full Name 1`] = `
 exports[`Storyshots Core/Avatar With Image 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 fiIZgk StyledAvatar-sc-1suyamb-1 sc-jLiVlK jjSmb"
+      class="StyledBox-sc-13pk1d4-0 fiIZgk StyledAvatar-sc-1suyamb-1 sc-iWFSnp dyTeJE"
     />
     
   </div>
@@ -100,10 +100,10 @@ exports[`Storyshots Core/Avatar With Image 1`] = `
 exports[`Storyshots Core/Avatar With Last Name 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-jLiVlK jjSmb"
+      class="StyledBox-sc-13pk1d4-0 fXtYff StyledAvatar-sc-1suyamb-1 sc-iWFSnp dyTeJE"
     >
       <div
         class="sc-fKFyDc jHCVxA sc-bBXqnf dtyrhz"

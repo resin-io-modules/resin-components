@@ -1,14 +1,16 @@
 import { Layer } from 'grommet';
-import merge from 'lodash/merge';
 import * as React from 'react';
 import styled, { createGlobalStyle, withTheme } from 'styled-components';
-import { ResponsiveStyle, Theme } from '../../common-types';
+import { ActionButtonGroup } from '../../internal/ActionButtonGroup';
+import {
+	ResponsiveStyle,
+	Theme,
+	ActionButtonDefinition,
+} from '../../common-types';
 import { px } from '../../utils';
 import { Box } from '../Box';
-import { Button, ButtonProps } from '../Button';
 import { Flex } from '../Flex';
 import { Heading } from '../Heading';
-import { Txt } from '../Txt';
 
 const bodyNoOverflowClass = `rendition-modal-open`;
 
@@ -24,18 +26,6 @@ const DEFAULT_MODAL_WIDTH = 700;
 const ModalSizer = styled(Box)`
 	overflow-y: auto;
 `;
-
-const HeadingDescription = styled(Txt)`
-	font-weight: normal;
-`;
-
-const ModalButton = (props: ButtonProps) => {
-	return 'href' in props && props.href ? (
-		<Button as="a" {...props} />
-	) : (
-		<Button {...props} />
-	);
-};
 
 class BaseModal extends React.Component<ThemedModalProps, any> {
 	public static mountedCount = 0;
@@ -61,7 +51,6 @@ class BaseModal extends React.Component<ThemedModalProps, any> {
 		if (!BaseModal.mountedCount) {
 			document.body.classList.remove(bodyNoOverflowClass);
 		}
-
 		window.removeEventListener('keydown', this.handleKeyDown);
 	}
 
@@ -74,14 +63,15 @@ class BaseModal extends React.Component<ThemedModalProps, any> {
 		if (!e.defaultPrevented && e.which === 13) {
 			e.preventDefault();
 			e.stopPropagation();
-
-			if (this.props.primaryButtonProps?.disabled) {
+			const firstPrimaryAction = this.props.actions?.find(
+				(action) => action.type === 'primary',
+			);
+			if (firstPrimaryAction?.disabled) {
 				return;
 			}
-
 			// Enter key
 			if (e.which === 13) {
-				this.props.done();
+				firstPrimaryAction?.onTriggerAction();
 			}
 		}
 	};
@@ -93,38 +83,17 @@ class BaseModal extends React.Component<ThemedModalProps, any> {
 		if (BaseModal.mountedCount !== this.ownIndex) {
 			return;
 		}
-
-		(this.props.cancel || this.props.done)();
+		const cancelButton = this.props.actions?.find(
+			(action) => action.type === 'none' || !action.type,
+		);
+		if (cancelButton?.disabled) {
+			return;
+		}
+		cancelButton?.onTriggerAction();
 	};
 
 	public render() {
 		const { width, theme, ...props } = this.props;
-
-		const cancelButtonProps = Object.assign({ ml: 3 }, props.cancelButtonProps);
-
-		const secondaryButtonProps = Object.assign(
-			{
-				primary: true,
-				outline: true,
-				ml: 3,
-			},
-			props.secondaryButtonProps,
-		);
-
-		const shouldChangePrimaryButtonOrder =
-			(props.primaryButtonProps?.danger ??
-				props.primaryButtonProps?.warning) === true;
-
-		const primaryButtonProps = merge(
-			{
-				primary: true,
-				ml: 3,
-				...(shouldChangePrimaryButtonOrder && {
-					style: { order: -1 },
-				}),
-			},
-			props.primaryButtonProps,
-		);
 
 		return (
 			<Layer
@@ -148,34 +117,14 @@ class BaseModal extends React.Component<ThemedModalProps, any> {
 					className={props.className}
 				>
 					<Box p={[px(theme.space[3]), '40px 50px 30px']}>
-						{props.titleElement ? (
-							<Heading.h3 mb={4}>{props.titleElement}</Heading.h3>
+						{props.header && typeof props.header === 'string' ? (
+							<Heading.h3 mb={4}>{props.header}</Heading.h3>
 						) : (
-							!!props.title && (
-								<Heading.h3 mb={4}>
-									{props.title}
-									{!!props.titleDetails && (
-										<HeadingDescription color="text.light" fontSize={2}>
-											{props.titleDetails}
-										</HeadingDescription>
-									)}
-								</Heading.h3>
-							)
+							props.header
 						)}
 						{props.children}
 						<Flex mt={5} alignItems="center" justifyContent="flex-end">
-							{props.cancel && (
-								<ModalButton {...cancelButtonProps} onClick={props.cancel}>
-									{(cancelButtonProps && cancelButtonProps.children) ||
-										'Cancel'}
-								</ModalButton>
-							)}
-							{props.secondaryButtonProps && (
-								<ModalButton {...secondaryButtonProps} />
-							)}
-							<ModalButton {...primaryButtonProps} onClick={props.done}>
-								{props.action || 'OK'}
-							</ModalButton>
+							<ActionButtonGroup actions={this.props.actions} />
 						</Flex>
 					</Box>
 				</ModalSizer>
@@ -185,27 +134,15 @@ class BaseModal extends React.Component<ThemedModalProps, any> {
 }
 
 export interface ModalProps extends React.HTMLAttributes<HTMLElement> {
-	/** A title to display at the top of the Modal, only displayed if the `titleElement` property is not used */
-	title?: string;
+	/** A string or JSX element to display at the top of the modal */
+	header?: string | JSX.Element;
 	width?: ResponsiveStyle;
 	/** Start the modal from the center (default) or top */
 	position?: 'center' | 'top';
-	/** A string or JSX element to display at the top of the modal */
-	titleElement?: string | JSX.Element;
 	/** A string or JSX element to display underneath the modal's `title`, only displayed if the `titleElement` property is not used and a `title` property is provided */
 	titleDetails?: string | JSX.Element;
 	/** A string or JSX element to display in the primary modal button, defaults to 'OK' */
-	action?: string | JSX.Element;
-	/** A function that is called if the modal is dismissed */
-	cancel?: () => any;
-	/** A function that is called if the primary modal button is clicked */
-	done: () => any;
-	/** Properties that are passed to the primary button, these are the same props used for the [`Button`](#button) component */
-	primaryButtonProps?: ButtonProps;
-	/** If provided, will cause a secondary button to appear on the modal. These properties that are passed to that button, these are the same props used for the [`Button`](#button) component */
-	secondaryButtonProps?: ButtonProps;
-	/** Properties that are passed to the cancel button, these are the same props used for the [`Button`](#button) component */
-	cancelButtonProps?: ButtonProps;
+	actions?: ActionButtonDefinition[];
 }
 
 export interface ThemedModalProps extends ModalProps {

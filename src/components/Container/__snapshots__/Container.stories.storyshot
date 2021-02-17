@@ -3,13 +3,13 @@
 exports[`Storyshots Core/Container Centered Content 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ QCGZt sc-aKZfe leIoYi sc-kmASHI kBhFNE"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ QCGZt sc-gsBrbv cLTACJ sc-aKZfe dnXERG"
     >
       <h3
-        class="sc-gWHgXt eCVPSB sc-cBNfnY hJuLdz"
+        class="sc-iktFzd ePMNkU sc-jJEJSO kYibbK"
       >
         I am in a container
       </h3>
@@ -21,13 +21,13 @@ exports[`Storyshots Core/Container Centered Content 1`] = `
 exports[`Storyshots Core/Container Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ QCGZt sc-aKZfe TjqdR sc-kmASHI kBhFNE"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ QCGZt sc-gsBrbv fHHEeu sc-aKZfe dnXERG"
     >
       <h3
-        class="sc-gWHgXt eCVPSB sc-cBNfnY hJuLdz"
+        class="sc-iktFzd ePMNkU sc-jJEJSO kYibbK"
       >
         I am in a container
       </h3>

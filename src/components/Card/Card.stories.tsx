@@ -1,24 +1,9 @@
 import * as React from 'react';
-import { Link, Flex, Button, TextWithCopy } from '../..';
+import { Flex, Button } from '../..';
 import { Meta } from '@storybook/react';
 import { createTemplate, createStory } from '../../stories/utils';
 import { Card, CardProps } from './';
-
-const rows = [
-	<div>Lorem Ipsum dolor si amet</div>,
-	<Link href="www.balena.io">Link</Link>,
-	<TextWithCopy
-		showCopyButton="always"
-		copy="This value has been copied to your clipboard!"
-	>
-		Row with Copy component
-	</TextWithCopy>,
-	<Flex justifyContent="space-between">
-		<div>Row with</div>
-		<div>Flex</div>
-	</Flex>,
-	<div>Lorem Ipsum dolor si amet</div>,
-];
+import { Heading } from '../Heading';
 
 export default {
 	title: 'Core/Card',
@@ -44,23 +29,60 @@ export const Small = createStory<CardProps>(Template, {
 	children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
   scelerisque euismod risus at gravida. Pellentesque a nunc semper,
   ultrices lacus nec, mattis mauris`,
-	small: [true, false, true, true],
+	emphasized: [true, false, true, true],
 });
 
 export const WithHeader = createStory<CardProps>(Template, {
-	title: 'Card with Button',
-	cta: (
-		<Button plain primary onClick={() => window.alert('Action with Button')}>
-			Update
-		</Button>
+	header: 'Card with title',
+	children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+  scelerisque euismod risus at gravida. Pellentesque a nunc semper,
+  ultrices lacus nec, mattis mauris`,
+});
+
+export const Emphasized = createStory<CardProps>(Template, {
+	header: 'Card with title',
+	emphasized: true,
+	children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+  scelerisque euismod risus at gravida. Pellentesque a nunc semper,
+  ultrices lacus nec, mattis mauris`,
+});
+
+export const WithActionHeader = createStory<CardProps>(Template, {
+	header: (
+		<Flex>
+			<Heading.h3>Card With action title</Heading.h3>
+			<Button
+				ml={2}
+				plain
+				primary
+				onClick={() => window.alert('Action with Button')}
+			>
+				Update
+			</Button>
+		</Flex>
 	),
 	children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
   scelerisque euismod risus at gravida. Pellentesque a nunc semper,
   ultrices lacus nec, mattis mauris`,
 });
 
-export const WithRows = createStory<CardProps>(Template, {
-	title: 'Card with Button',
-	cta: <Link href="https://balena.io">Link</Link>,
-	rows,
+export const WithActions = createStory<CardProps>(Template, {
+	minHeight: '300px',
+	width: '600px',
+	header: 'Card with Actions',
+	children: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+  scelerisque euismod risus at gravida. Pellentesque a nunc semper,
+  ultrices lacus nec, mattis mauris `,
+	actions: [
+		{
+			title: 'Normal action',
+			type: 'primary',
+			onTriggerAction: () => window.alert('Normal action'),
+		},
+		{
+			title: 'Danger action',
+			type: 'danger',
+			onTriggerAction: () => window.alert('Danger action'),
+		},
+	],
 });

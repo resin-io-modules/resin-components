@@ -10,11 +10,17 @@ describe('Keyboard closing modals', () => {
 	it('should call the callback of the top-most nested modal on Escape key press', () => {
 		const firstModalSpy = sinon.spy();
 		const secondModalSpy = sinon.spy();
+		const firstModalActions = [
+			{ title: 'first Modal Action', onTriggerAction: firstModalSpy },
+		];
+		const secondModalActions = [
+			{ title: 'second Modal Action', onTriggerAction: secondModalSpy },
+		];
 
 		const component = mount(
 			<Provider>
-				<Modal done={firstModalSpy}>
-					<Modal done={secondModalSpy}>Test</Modal>
+				<Modal actions={firstModalActions}>
+					<Modal actions={secondModalActions}>Test</Modal>
 				</Modal>
 			</Provider>,
 		);
@@ -29,10 +35,13 @@ describe('Keyboard closing modals', () => {
 
 	it('should call the callback of the only modal on Escape key press', () => {
 		const modalSpy = sinon.spy();
+		const modalActions = [
+			{ title: 'first Modal Action', onTriggerAction: modalSpy },
+		];
 
 		const component = mount(
 			<Provider>
-				<Modal done={modalSpy}>Test</Modal>
+				<Modal actions={modalActions}>Test</Modal>
 			</Provider>,
 		);
 
@@ -66,11 +75,25 @@ describe('Keyboard submitting nested modals', () => {
 	it('should call the callback of the top-most modal with done on Enter key press', () => {
 		const firstModalSpy = sinon.spy();
 		const secondModalSpy = sinon.spy();
+		const firstModalActions = [
+			{
+				title: 'first Modal Action',
+				type: 'primary',
+				onTriggerAction: firstModalSpy,
+			},
+		];
+		const secondModalActions = [
+			{
+				title: 'second Modal Action',
+				type: 'primary',
+				onTriggerAction: secondModalSpy,
+			},
+		];
 
 		mount(
 			<Provider>
-				<Modal done={firstModalSpy}>
-					<Modal done={secondModalSpy}>Test</Modal>
+				<Modal actions={firstModalActions}>
+					<Modal actions={secondModalActions}>Test</Modal>
 				</Modal>
 			</Provider>,
 		);
@@ -90,13 +113,21 @@ describe('Keyboard submitting nested modals', () => {
 	it('should not call any callback of either modal on Enter key press when the primary button is disabled', () => {
 		const firstModalSpy = sinon.spy();
 		const secondModalSpy = sinon.spy();
+		const firstModalActions = [
+			{ title: 'first Modal Action', onTriggerAction: firstModalSpy },
+		];
+		const secondModalActions = [
+			{
+				title: 'second Modal Action',
+				disabled: true,
+				onTriggerAction: secondModalSpy,
+			},
+		];
 
 		mount(
 			<Provider>
-				<Modal done={firstModalSpy}>
-					<Modal primaryButtonProps={{ disabled: true }} done={secondModalSpy}>
-						Test
-					</Modal>
+				<Modal actions={firstModalActions}>
+					<Modal actions={secondModalActions}>Test</Modal>
 				</Modal>
 			</Provider>,
 		);

@@ -3,17 +3,17 @@
 exports[`Storyshots Core/Tag Clickable 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <button
         class="StyledButton-sc-323bzc-0 jajFOe sc-bqyKva sc-bkzZxe gjQfnS hgJIgM sc-dIUggk YDvpG"
         type="button"
       >
         <div
-          class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+          class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
         >
           <div
             class="sc-fKFyDc dTkenA sc-bBXqnf iHGIIw"
@@ -35,13 +35,13 @@ exports[`Storyshots Core/Tag Clickable 1`] = `
 exports[`Storyshots Core/Tag Closable 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
       >
         <div
           class="sc-fKFyDc dTkenA sc-bBXqnf iHGIIw"
@@ -55,7 +55,7 @@ exports[`Storyshots Core/Tag Closable 1`] = `
         </div>
       </div>
       <button
-        class="StyledButton-sc-323bzc-0 jajFOe sc-bqyKva sc-bkzZxe gjQfnS hgJIgM sc-dIUggk fBWcUT sc-fbkhIv hQBnSA"
+        class="StyledButton-sc-323bzc-0 jajFOe sc-bqyKva sc-bkzZxe gjQfnS hgJIgM sc-dIUggk fBWcUT sc-clsHhM hUEyIR"
         type="button"
       >
         <svg
@@ -82,13 +82,13 @@ exports[`Storyshots Core/Tag Closable 1`] = `
 exports[`Storyshots Core/Tag Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
       >
         <div
           class="sc-fKFyDc dTkenA sc-bBXqnf iHGIIw"
@@ -109,13 +109,13 @@ exports[`Storyshots Core/Tag Default 1`] = `
 exports[`Storyshots Core/Tag Empty 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
       >
         <div
           class="sc-fKFyDc kZwXGu sc-bBXqnf iHGIIw"
@@ -131,13 +131,13 @@ exports[`Storyshots Core/Tag Empty 1`] = `
 exports[`Storyshots Core/Tag Multiple Values 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
       >
         <div
           class="sc-fKFyDc dTkenA sc-bBXqnf iHGIIw"
@@ -173,13 +173,13 @@ exports[`Storyshots Core/Tag Multiple Values 1`] = `
 exports[`Storyshots Core/Tag Only Name 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
       >
         <div
           class="sc-fKFyDc euqOvB sc-bBXqnf iHGIIw"
@@ -195,13 +195,13 @@ exports[`Storyshots Core/Tag Only Name 1`] = `
 exports[`Storyshots Core/Tag Only Value 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-GqfZa cHWpcm"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr cLDXoV sc-fbkhIv gnNozJ"
     >
       <div
-        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-clsHhM cLDXoV bjaVYF"
+        class="sc-gKsewC cgpPfo sc-iBPRYJ egHqKA sc-hHftDr sc-gGmIRh cLDXoV dgHkOy"
       >
         <div
           class="sc-fKFyDc euqOvB sc-bBXqnf iHGIIw"

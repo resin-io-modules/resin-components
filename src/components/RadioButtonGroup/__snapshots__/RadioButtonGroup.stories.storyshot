@@ -3,10 +3,10 @@
 exports[`Storyshots Core/RadioButtonGroup Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD sc-flMoUE ernOHs sc-eWVKcp eikgVN"
+      class="StyledBox-sc-13pk1d4-0 dYebPD sc-gkdzZj etxjjy sc-flMoUE iKTkeN"
     >
       <label
         class="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 kpowLU"
@@ -80,10 +80,10 @@ exports[`Storyshots Core/RadioButtonGroup Default 1`] = `
 exports[`Storyshots Core/RadioButtonGroup With Expanded Options 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="StyledBox-sc-13pk1d4-0 dYebPD sc-flMoUE iXKTKg sc-eWVKcp eikgVN"
+      class="StyledBox-sc-13pk1d4-0 dYebPD sc-gkdzZj iMZGGC sc-flMoUE iKTkeN"
     >
       <label
         class="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 gmkESR"

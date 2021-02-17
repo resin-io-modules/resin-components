@@ -3,13 +3,13 @@
 exports[`Storyshots Core/Notifications Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ htdDiA sc-hHftDr jpCUGc"
     >
       <div
-        class="react-notification-root sc-gsBrbv dXUKmO"
+        class="react-notification-root sc-iIEYCM kTPMVU"
       >
         <div
           class="notification-container-top-left"
@@ -25,7 +25,7 @@ exports[`Storyshots Core/Notifications Default 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 
                 <div
@@ -71,7 +71,7 @@ exports[`Storyshots Core/Notifications Default 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 
                 <div
@@ -164,10 +164,10 @@ exports[`Storyshots Core/Notifications Default 1`] = `
 exports[`Storyshots Core/Notifications Positioning 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="react-notification-root sc-gsBrbv dXUKmO"
+      class="react-notification-root sc-iIEYCM kTPMVU"
     >
       <div
         class="notification-container-top-left"
@@ -180,7 +180,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
             class="notification-item n-child"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
             >
               
               <div
@@ -230,7 +230,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
             class="notification-item n-child"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
             >
               
               <div
@@ -280,7 +280,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
             class="notification-item n-child"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
             >
               
               <div
@@ -330,7 +330,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
             class="notification-item n-child"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
             >
               
               <div
@@ -380,7 +380,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
             class="notification-item n-child"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
             >
               
               <div
@@ -433,7 +433,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 
                 <div
@@ -484,7 +484,7 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
             class="notification-item n-child"
           >
             <div
-              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+              class="sc-gKsewC cgpPfo sc-iBPRYJ dWRxlP sc-hHftDr sc-dmlrTW cLDXoV jCybnR sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
             >
               
               <div
@@ -585,13 +585,13 @@ exports[`Storyshots Core/Notifications Positioning 1`] = `
 exports[`Storyshots Core/Notifications Types 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-gKsewC cgpPfo sc-iBPRYJ htdDiA sc-hHftDr jpCUGc"
     >
       <div
-        class="react-notification-root sc-gsBrbv dXUKmO"
+        class="react-notification-root sc-iIEYCM kTPMVU"
       >
         <div
           class="notification-container-top-left"
@@ -607,7 +607,7 @@ exports[`Storyshots Core/Notifications Types 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ dQsSLq sc-hHftDr sc-dmlrTW cLDXoV RAjJT sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ dQsSLq sc-hHftDr sc-dmlrTW cLDXoV RAjJT sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 <div
                   class="sc-fKFyDc jHCVxA sc-bBXqnf XVwEh"
@@ -675,7 +675,7 @@ exports[`Storyshots Core/Notifications Types 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ fiWzOU sc-hHftDr sc-dmlrTW cLDXoV dcrGdQ sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ fiWzOU sc-hHftDr sc-dmlrTW cLDXoV dcrGdQ sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 <div
                   class="sc-fKFyDc jHCVxA sc-bBXqnf hsApDH"
@@ -743,7 +743,7 @@ exports[`Storyshots Core/Notifications Types 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ ipiHMM sc-hHftDr sc-dmlrTW cLDXoV fNGbub sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ ipiHMM sc-hHftDr sc-dmlrTW cLDXoV fNGbub sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 <div
                   class="sc-fKFyDc jHCVxA sc-bBXqnf ebpqPX"
@@ -811,7 +811,7 @@ exports[`Storyshots Core/Notifications Types 1`] = `
               class="notification-item n-child"
             >
               <div
-                class="sc-gKsewC cgpPfo sc-iBPRYJ cEHZTN sc-hHftDr sc-dmlrTW cLDXoV jwBGWI sc-lmoMRL cGXAYQ sc-iIEYCM ktfDZQ"
+                class="sc-gKsewC cgpPfo sc-iBPRYJ cEHZTN sc-hHftDr sc-dmlrTW cLDXoV jwBGWI sc-lmoMRL cGXAYQ sc-cKZHah jdzSPJ"
               >
                 <div
                   class="sc-fKFyDc jHCVxA sc-bBXqnf ifPkvS"

@@ -3,7 +3,7 @@
 exports[`Storyshots Core/Select Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-eJMQSu icifty sc-nFpLZ jNUxxL"
@@ -59,7 +59,7 @@ exports[`Storyshots Core/Select Default 1`] = `
 exports[`Storyshots Core/Select Emphasized 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-eJMQSu icifty sc-nFpLZ jNUxxL"
@@ -115,7 +115,7 @@ exports[`Storyshots Core/Select Emphasized 1`] = `
 exports[`Storyshots Core/Select Invalid 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-eJMQSu ekgIso sc-nFpLZ jNUxxL"
@@ -171,7 +171,7 @@ exports[`Storyshots Core/Select Invalid 1`] = `
 exports[`Storyshots Core/Select Object Options 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-eJMQSu icifty sc-nFpLZ jNUxxL"
@@ -227,7 +227,7 @@ exports[`Storyshots Core/Select Object Options 1`] = `
 exports[`Storyshots Core/Select With Custom Option 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-eJMQSu icifty sc-nFpLZ jNUxxL"
@@ -283,7 +283,7 @@ exports[`Storyshots Core/Select With Custom Option 1`] = `
 exports[`Storyshots Core/Select With Placeholder 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
       class="sc-eJMQSu icifty sc-nFpLZ jNUxxL"

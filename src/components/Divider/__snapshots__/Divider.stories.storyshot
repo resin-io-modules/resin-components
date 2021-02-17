@@ -3,10 +3,10 @@
 exports[`Storyshots Core/Divider Dashed 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <hr
-      class="sc-iktFzd cUYtuc sc-hiSbYr ioExYC"
+      class="sc-iUuytg kDfphZ sc-eggNIi escNXG"
       type="dashed"
     />
   </div>
@@ -16,10 +16,10 @@ exports[`Storyshots Core/Divider Dashed 1`] = `
 exports[`Storyshots Core/Divider Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <hr
-      class="sc-iktFzd cJCAjm sc-hiSbYr ioExYC"
+      class="sc-iUuytg fFHqGT sc-eggNIi escNXG"
     />
   </div>
 </div>
@@ -28,10 +28,10 @@ exports[`Storyshots Core/Divider Default 1`] = `
 exports[`Storyshots Core/Divider With Custom Color 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <hr
-      class="sc-iktFzd cbtjSH sc-hiSbYr bmzuUW"
+      class="sc-iUuytg tCbFq sc-eggNIi blChIG"
       color="#ccc"
     />
   </div>
@@ -41,13 +41,13 @@ exports[`Storyshots Core/Divider With Custom Color 1`] = `
 exports[`Storyshots Core/Divider With Text Content 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <div
-      class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI sc-hHftDr bxfdfp sc-hiSbYr ioExYC"
+      class="sc-gKsewC cgpPfo sc-iBPRYJ kCgyvI sc-hHftDr bxfdfp sc-eggNIi escNXG"
     >
       <hr
-        class="sc-iktFzd sc-jJEJSO cUYtuc dceFUj"
+        class="sc-iUuytg sc-iBaPrD kDfphZ SWHog"
         type="dashed"
       />
       <span
@@ -56,7 +56,7 @@ exports[`Storyshots Core/Divider With Text Content 1`] = `
         some text
       </span>
       <hr
-        class="sc-iktFzd sc-jJEJSO cUYtuc dceFUj"
+        class="sc-iUuytg sc-iBaPrD kDfphZ SWHog"
         type="dashed"
       />
     </div>

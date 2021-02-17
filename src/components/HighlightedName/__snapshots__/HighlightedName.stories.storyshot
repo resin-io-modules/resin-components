@@ -3,10 +3,10 @@
 exports[`Storyshots Core/HighlightedName Default 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <span
-      class="sc-fKFyDc jHCVxA sc-iwyYcG gAkelF sc-GTWni eVmJHO sc-gsxnyZ dHyYZs"
+      class="sc-fKFyDc jHCVxA sc-iwyYcG gAkelF sc-fbNXWD xnzqE sc-GTWni VLWRW"
     >
       Frontend Service
     </span>
@@ -17,10 +17,10 @@ exports[`Storyshots Core/HighlightedName Default 1`] = `
 exports[`Storyshots Core/HighlightedName With Custom Colors 1`] = `
 <div>
   <div
-    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-eFubAy kVQCHm"
+    class="StyledGrommet-sc-19lkkz7-0 jdcmMW sc-jXktwP kNOktQ"
   >
     <span
-      class="sc-fKFyDc jHCVxA sc-iwyYcG brBCdy sc-GTWni eVmJHO sc-gsxnyZ gQsiKP"
+      class="sc-fKFyDc jHCVxA sc-iwyYcG brBCdy sc-fbNXWD xnzqE sc-GTWni dbLoyB"
     >
       Frontend Service
     </span>
