@@ -1,30 +1,22 @@
 import { faSort } from '@fortawesome/free-solid-svg-icons/faSort';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import every from 'lodash/every';
-import filter from 'lodash/filter';
-import find from 'lodash/find';
-import includes from 'lodash/includes';
-import isEqual from 'lodash/isEqual';
-import isPlainObject from 'lodash/isPlainObject';
-import map from 'lodash/map';
-import reject from 'lodash/reject';
-import reverse from 'lodash/reverse';
-import some from 'lodash/some';
+import {
+	FontAwesomeIcon,
+	FontAwesomeIconProps,
+} from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { Checkbox, CheckboxProps } from '../Checkbox';
+import { CheckboxWrapper, TableColumn, TableRow } from './TableRow';
 import sortBy from 'lodash/sortBy';
-import * as React from 'react';
+import isPlainObject from 'lodash/isPlainObject';
+import isEqual from 'lodash/isEqual';
+import { Pager } from '../Pager';
 import styled from 'styled-components';
-
+import { px } from '../../utils';
 import { Button } from '../Button';
 
-// TODO: Remove explicit import and depend on provider instead.
-import theme from '../../theme';
-import { px } from '../../utils';
-import { Checkbox, CheckboxProps } from '../Checkbox';
-import { Pager } from '../Pager';
-import { CheckboxWrapper, TableColumn, TableRow } from './TableRow';
-
+// TODO: fix typing
 const highlightStyle = `
-	background-color: ${theme.colors.info.light};
+	background-color: ${(props: any) => props.theme.colors.info.light};
 `;
 
 const BaseTableWrapper = styled.div`
@@ -32,13 +24,20 @@ const BaseTableWrapper = styled.div`
 	max-width: 100%;
 `;
 
-interface BaseTableProps {
-	hasCheckbox: boolean;
-	hasRowClick: boolean;
-	hasGetRowRef: boolean;
-}
+const SortIcon = styled(FontAwesomeIcon)<
+	FontAwesomeIconProps & { isSelected: boolean }
+>`
+	color: ${(props) => (props.isSelected ? props.theme.colors.info.main : '')};
+`;
 
-const Base = styled.div<BaseTableProps>`
+// TODO: fix typing
+const Base = styled.div<
+	TableProps<any> & {
+		hasCheckbox: boolean;
+		hasRowClick: boolean;
+		hasGetRowRef: boolean;
+	}
+>`
 	display: table;
 	width: 100%;
 	border-spacing: 0;
@@ -125,18 +124,9 @@ const Base = styled.div<BaseTableProps>`
 	}
 `;
 
-const HeaderButton = styled(Button)`
-	display: block;
-`;
-
-interface TableState<T> {
-	allChecked: boolean;
-	sort: {
-		reverse: boolean;
-		field: null | keyof T;
-	};
-	checkedItems: T[];
-	page: number;
+export interface TableSortOptions<T> {
+	reverse: boolean;
+	field: keyof T | null;
 }
 
 /**
@@ -188,446 +178,6 @@ interface TableState<T> {
  *
  * [View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/Table/Table.stories.tsx)
  */
-export class Table<T> extends React.Component<TableProps<T>, TableState<T>> {
-	constructor(props: TableProps<T>) {
-		super(props);
-
-		if (props.onCheck && !props.rowKey) {
-			throw new Error(
-				'A `rowKey` property must be provided if using `onCheck` with a Table component',
-			);
-		}
-
-		const sortState = props.sort || {
-			reverse: false,
-			field: null,
-		};
-
-		this.state = {
-			sort: sortState,
-			page: 0,
-			...this.getSelectedRows(props.checkedItems),
-		};
-	}
-
-	public componentDidUpdate(prevProps: TableProps<T>) {
-		if (this.props.sort && !isEqual(prevProps.sort, this.props.sort)) {
-			this.setState({
-				sort: this.props.sort,
-			});
-		}
-
-		if (
-			this.props.checkedItems &&
-			prevProps.checkedItems !== this.props.checkedItems
-		) {
-			this.setRowSelection(this.props.checkedItems);
-		}
-
-		const totalItems = this.props.data?.length ?? 0;
-		const itemsPerPage = this.props.itemsPerPage ?? 50;
-		if (this.state.page !== 0 && totalItems <= this.state.page * itemsPerPage) {
-			this.resetPager();
-		}
-	}
-
-	public isChecked(item: T) {
-		const rowKey = this.props.rowKey;
-		if (!rowKey) {
-			return false;
-		}
-
-		const identifier = item[rowKey];
-		return some(this.state.checkedItems, { [rowKey]: identifier });
-	}
-
-	public isHighlighted(item: T) {
-		if (
-			!this.props.highlightedRows ||
-			this.props.highlightedRows.length === 0
-		) {
-			return false;
-		}
-
-		const rowKey = this.props.rowKey;
-		if (!rowKey) {
-			return false;
-		}
-
-		const identifier = item[rowKey];
-		return includes(this.props.highlightedRows, identifier);
-	}
-
-	public isDisabled(item: T) {
-		if (!this.props.disabledRows || this.props.disabledRows.length === 0) {
-			return false;
-		}
-
-		const rowKey = this.props.rowKey;
-		if (!rowKey) {
-			return false;
-		}
-
-		const identifier = item[rowKey];
-		return includes(this.props.disabledRows, identifier);
-	}
-
-	public isEachRowChecked(checkedItems: T[]): boolean {
-		const rowKey = this.props.rowKey;
-		if (!rowKey) {
-			return false;
-		}
-
-		const selectedKeys = map(checkedItems, rowKey);
-
-		return every(this.props.data, (x) => includes(selectedKeys, x[rowKey]));
-	}
-
-	public sortData(data: T[]): T[] {
-		const { sort } = this.state;
-		if (!sort || sort.field === null) {
-			return data;
-		}
-
-		const column = find(this.props.columns, { field: sort.field });
-
-		if (!column) {
-			return data;
-		}
-
-		let collection;
-
-		const columnAny = column || ({} as any);
-
-		if ('sortable' in columnAny && typeof columnAny.sortable === 'function') {
-			collection = data.slice().sort(columnAny.sortable);
-		} else {
-			collection = sortBy<T>(data.slice(), (item) => {
-				const sortableValue = item[sort.field as keyof T];
-				return isPlainObject(sortableValue)
-					? (sortableValue as any).value
-					: sortableValue;
-			});
-		}
-
-		if (sort.reverse) {
-			reverse(collection);
-		}
-
-		return collection;
-	}
-
-	private getSelectedRows = (selectedRows: T[] | undefined) => {
-		const { rowKey, data } = this.props;
-
-		if (!rowKey || selectedRows?.length === 0) {
-			return { checkedItems: [], allChecked: false };
-		}
-
-		const selectedRowsIds = map(selectedRows, rowKey);
-
-		let checkedItems: T[] = [];
-		let allChecked = false;
-
-		if (data) {
-			checkedItems = filter(this.props.data, (x) =>
-				includes(selectedRowsIds, x[rowKey]),
-			);
-			allChecked = data.length > 0 && checkedItems.length === data.length;
-		}
-
-		return { checkedItems, allChecked };
-	};
-
-	public setRowSelection = (selectedRows: T[]): void => {
-		this.setState(this.getSelectedRows(selectedRows));
-	};
-
-	public toggleAllChecked = () => {
-		const { data } = this.props;
-
-		const allChecked = !this.state.allChecked;
-		const checkedItems = allChecked
-			? (data || []).slice().filter((r) => !this.isDisabled(r))
-			: [];
-
-		if (this.props.onCheck) {
-			this.props.onCheck(checkedItems);
-		}
-
-		this.setState({ allChecked, checkedItems });
-	};
-
-	public toggleChecked = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const rowKey = this.props.rowKey;
-		const { key } = e.currentTarget.dataset;
-		if (!rowKey || !key) {
-			return false;
-		}
-
-		const item = this.getElementFromKey(key);
-
-		if (!item) {
-			return;
-		}
-
-		const identifier = item[rowKey];
-
-		const isChecked = !this.isChecked(item);
-		const checkedItems = isChecked
-			? this.state.checkedItems.concat(item)
-			: ((reject(this.state.checkedItems, {
-					[rowKey]: identifier,
-			  }) as unknown) as Array<typeof item>);
-
-		if (this.props.onCheck) {
-			this.props.onCheck(checkedItems);
-		}
-
-		this.setState({
-			allChecked: this.isEachRowChecked(checkedItems),
-			checkedItems,
-		});
-	};
-
-	public toggleSort = (e: React.MouseEvent<HTMLButtonElement>) => {
-		const { field } = e.currentTarget.dataset;
-		const { sort } = this.state;
-		if (!field) {
-			return;
-		}
-
-		let nextSort = {
-			field: field as keyof T,
-			reverse: false,
-		};
-
-		if (sort.field === field) {
-			nextSort = { field: sort.field, reverse: !sort.reverse };
-		}
-
-		this.setState({ sort: nextSort });
-
-		if (this.props.onSort) {
-			this.props.onSort(nextSort);
-		}
-	};
-
-	public getElementFromKey(key: string) {
-		const { data, rowKey } = this.props;
-		if (!data) {
-			return;
-		}
-
-		if (rowKey) {
-			// Normalize the key value to a string for comparison, because data
-			// attributes on elements are always strings
-			return find(data, (element) => `${element[rowKey]}` === key);
-		}
-
-		return data[Number(key)];
-	}
-
-	public onRowClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-		if (!this.props.onRowClick) {
-			return;
-		}
-
-		if (!this.props.rowKey) {
-			return console.warn(
-				'onRowClick requires that you provide a `rowKey` property',
-			);
-		}
-
-		const { key } = e.currentTarget.dataset;
-
-		if (!key) {
-			return console.warn('onRowClick called on an element without a key set');
-		}
-		const row = this.getElementFromKey(key);
-
-		if (row) {
-			this.props.onRowClick(row, e);
-		}
-	};
-
-	public setPage = (change: any) => {
-		if (this.props.onPageChange) {
-			this.props.onPageChange(change);
-		}
-
-		this.setState({ page: change });
-	};
-
-	public resetPager = () => {
-		this.setPage(0);
-	};
-
-	public incrementPage = () => {
-		this.setPage(this.state.page + 1);
-	};
-
-	public decrementPage = () => {
-		this.setPage(this.state.page - 1);
-	};
-
-	public render() {
-		const {
-			columns,
-			data,
-			usePager,
-			itemsPerPage,
-			pagerPosition,
-			rowAnchorAttributes,
-			rowKey,
-			onCheck,
-			onRowClick,
-			getRowHref,
-			getRowClass,
-			...props
-		} = this.props;
-
-		const { page, sort } = this.state;
-		const items = data || [];
-		const totalItems = items.length;
-
-		const _itemsPerPage = itemsPerPage || 50;
-		const _pagerPosition = pagerPosition || 'top';
-
-		const lowerBound = usePager ? page * _itemsPerPage : 0;
-		const upperBound = usePager
-			? Math.min((page + 1) * _itemsPerPage, totalItems)
-			: totalItems;
-
-		const sortedData = this.sortData(items).slice(lowerBound, upperBound);
-
-		const shouldShowPaper = !!usePager && totalItems > 0;
-
-		return (
-			<>
-				{shouldShowPaper &&
-					(_pagerPosition === 'top' || _pagerPosition === 'both') && (
-						<Pager
-							totalItems={totalItems}
-							itemsPerPage={_itemsPerPage}
-							page={page}
-							nextPage={this.incrementPage}
-							prevPage={this.decrementPage}
-							mb={2}
-						/>
-					)}
-
-				<BaseTableWrapper>
-					<Base
-						{...props}
-						hasRowClick={!!onRowClick}
-						hasGetRowRef={!!getRowHref}
-						hasCheckbox={!!onCheck}
-					>
-						<div data-display="table-head">
-							<div data-display="table-row">
-								{onCheck && (
-									<CheckboxWrapper data-display="table-cell">
-										<Checkbox
-											checked={this.state.allChecked}
-											onChange={this.toggleAllChecked}
-										/>
-									</CheckboxWrapper>
-								)}
-								{map(columns, (item) => {
-									if (item.sortable) {
-										return (
-											<div
-												data-display="table-cell"
-												key={item.key || (item.field as string)}
-											>
-												<HeaderButton
-													data-field={item.field}
-													plain
-													primary={sort.field === item.field}
-													onClick={this.toggleSort}
-												>
-													{item.label || item.field}
-													&nbsp;
-													<FontAwesomeIcon
-														icon={faSort}
-														color={
-															sort.field === item.field
-																? theme.colors.info.main
-																: ''
-														}
-													/>
-												</HeaderButton>
-											</div>
-										);
-									}
-									return (
-										<div
-											data-display="table-cell"
-											key={item.key || (item.field as string)}
-										>
-											{item.label || item.field}
-										</div>
-									);
-								})}
-							</div>
-						</div>
-						<div data-display="table-body">
-							{this.props.tbodyPrefix}
-							{map(sortedData, (row, i) => {
-								const isChecked = onCheck ? this.isChecked(row) : false;
-								const isHighlighted = this.isHighlighted(row);
-								const isDisabled = this.isDisabled(row);
-								const key = rowKey ? (row[rowKey] as any) : i;
-								const href = !!getRowHref ? getRowHref(row) : undefined;
-								const classNamesList =
-									typeof getRowClass === 'function' ? getRowClass(row) : [];
-								const className = Array.isArray(classNamesList)
-									? classNamesList.join(' ')
-									: '';
-								return (
-									<TableRow
-										isChecked={isChecked}
-										isHighlighted={isHighlighted}
-										isDisabled={isDisabled}
-										key={key}
-										keyAttribute={key}
-										href={href}
-										data={row}
-										showCheck={!!onCheck}
-										columns={columns}
-										attributes={rowAnchorAttributes}
-										checkboxAttributes={this.props.rowCheckboxAttributes}
-										toggleChecked={this.toggleChecked}
-										onRowClick={this.onRowClick}
-										className={className}
-									/>
-								);
-							})}
-						</div>
-					</Base>
-				</BaseTableWrapper>
-
-				{shouldShowPaper &&
-					(_pagerPosition === 'bottom' || _pagerPosition === 'both') && (
-						<Pager
-							totalItems={totalItems}
-							itemsPerPage={_itemsPerPage}
-							page={page}
-							nextPage={this.incrementPage}
-							prevPage={this.decrementPage}
-							mt={2}
-						/>
-					)}
-			</>
-		);
-	}
-}
-
-export interface TableSortOptions<T> {
-	reverse: boolean;
-	field: keyof T | null;
-}
 
 export interface TableProps<T> {
 	/** An array of column objects, as described above */
@@ -647,7 +197,7 @@ export interface TableProps<T> {
 	/** A function that is called when the page is incremented, decremented and reset */
 	onPageChange?: (page: number) => void;
 	/** sort options to be used both as a default sort, and on subsequent renders if the passed sort changes */
-	sort?: TableSortOptions<T>;
+	sort?: TableSortOptions<T>; // DO WE REALLY NEED IT ?
 	/** Attributes to pass to the anchor element used in a row */
 	rowAnchorAttributes?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
 	/** Attributes to pass to the checkbox element used in a row */
@@ -670,4 +220,292 @@ export interface TableProps<T> {
 	pagerPosition?: 'top' | 'bottom' | 'both';
 }
 
-export { TableColumn, TableRow };
+export const Table = <T extends any>({
+	columns,
+	data,
+	checkedItems,
+	getRowHref,
+	onCheck,
+	onRowClick,
+	onSort,
+	onPageChange,
+	sort,
+	rowAnchorAttributes,
+	rowCheckboxAttributes,
+	rowKey,
+	tbodyPrefix,
+	highlightedRows,
+	disabledRows,
+	getRowClass,
+	usePager,
+	itemsPerPage,
+	pagerPosition,
+	...otherProps
+}: TableProps<T>) => {
+	const [sortField, setSortFiled] = React.useState<keyof T | null>(null);
+	const [sortReverse, setSortReverse] = React.useState(false);
+	const [page, setPage] = React.useState(0);
+	const [internalCheckedItems, setInternalCheckedItems] = React.useState<
+		T[] | undefined
+	>();
+	const [allChecked, setAllChecked] = React.useState(false);
+
+	React.useEffect(() => {
+		setInternalCheckedItems(checkedItems);
+	}, [checkedItems]);
+
+	React.useEffect(() => {
+		const totalItems = data?.length ?? 0;
+		if (page !== 0 && totalItems <= page * (itemsPerPage ?? 50)) {
+			setPage(0);
+		}
+	}, [data, itemsPerPage]);
+
+	React.useEffect(() => {
+		if (!onCheck) {
+			return;
+		}
+		if (!isEqual(internalCheckedItems, checkedItems)) {
+			onCheck(internalCheckedItems || []);
+		}
+	}, [internalCheckedItems]);
+
+	React.useEffect(() => {
+		if (!onPageChange) {
+			return;
+		}
+		onPageChange(page);
+	}, [page]);
+
+	const sortData = (data: T[]): T[] => {
+		if (!sortField) {
+			return data;
+		}
+
+		const column = columns.find((column) => column.field === sortField);
+
+		if (!column) {
+			return data;
+		}
+
+		const sortedData =
+			typeof column.sortable === 'function'
+				? data.sort(column.sortable)
+				: sortBy<T>(data.slice(), (item) => {
+						const sortableValue = item[sort?.field as keyof T];
+						return isPlainObject(sortableValue)
+							? (sortableValue as any).value
+							: sortableValue;
+				  });
+
+		if (!sortReverse) {
+			return sortedData;
+		}
+
+		return sortedData.reverse();
+	};
+
+	const sortedPagedData = React.useMemo(() => {
+		if (!usePager) {
+			return sortData(data || []);
+		}
+
+		const elementsPerPage = itemsPerPage ?? 50;
+		const totalItems = data?.length ?? 0;
+		const lowerBound = page * elementsPerPage;
+		const upperBound = Math.min((page + 1) * elementsPerPage, totalItems);
+		return sortData(data || []).slice(lowerBound, upperBound);
+	}, [data, usePager, itemsPerPage, page]);
+
+	const isChecked = (item: T) => {
+		if (!rowKey) {
+			return false;
+		}
+		return (
+			internalCheckedItems?.some(
+				(checked) => checked[rowKey] === item[rowKey],
+			) ?? false
+		);
+	};
+
+	const isHighlighted = (item: T) => {
+		if (!highlightedRows?.length) {
+			return false;
+		}
+		if (!rowKey) {
+			return false;
+		}
+
+		return highlightedRows.includes(item[rowKey]);
+	};
+
+	const isDisabled = (item: T) => {
+		if (!disabledRows?.length) {
+			return false;
+		}
+		if (!rowKey) {
+			return false;
+		}
+
+		return disabledRows.includes(item[rowKey]);
+	};
+
+	const toggleAllChecked = () => {
+		const filteredDisabled = sortedPagedData.filter((row) => !isDisabled(row));
+		if (internalCheckedItems?.length === filteredDisabled.length) {
+			setInternalCheckedItems([]);
+		} else {
+			setInternalCheckedItems(filteredDisabled);
+		}
+		setAllChecked(!allChecked);
+	};
+
+	const toggleChecked = React.useCallback(
+		(item: T) => {
+			if (!rowKey) {
+				return;
+			}
+			if (!isChecked(item)) {
+				setInternalCheckedItems(internalCheckedItems?.concat(item));
+				return;
+			}
+			const checkedItems = internalCheckedItems?.filter(
+				(checked) => checked[rowKey] !== item[rowKey],
+			);
+			setInternalCheckedItems(checkedItems);
+		},
+		[internalCheckedItems, rowKey],
+	);
+
+	const toggleSort = React.useCallback(
+		(field: keyof T) => () => {
+			setSortReverse(sortField === field ? !sortReverse : false);
+			setSortFiled(field);
+		},
+		[sortField, sortReverse],
+	);
+
+	const rowClick = React.useCallback(
+		(row: T, event: React.MouseEvent<HTMLAnchorElement>) => {
+			if (!onRowClick) {
+				return;
+			}
+
+			onRowClick(row, event);
+		},
+		[onRowClick],
+	);
+
+	return (
+		<>
+			{usePager &&
+				(!pagerPosition ||
+					pagerPosition === 'top' ||
+					pagerPosition === 'both') && (
+					<Pager
+						totalItems={data?.length ?? 0}
+						itemsPerPage={itemsPerPage ?? 50}
+						page={page}
+						nextPage={React.useCallback(() => setPage(page + 1), [page])}
+						prevPage={React.useCallback(() => setPage(page - 1), [page])}
+						mb={2}
+					/>
+				)}
+			<BaseTableWrapper>
+				<Base<any>
+					{...otherProps}
+					hasRowClick={!!onRowClick}
+					hasGetRowRef={!!getRowHref}
+					hasCheckbox={!!onCheck}
+				>
+					<div data-display="table-head">
+						<div data-display="table-row">
+							{onCheck && (
+								<CheckboxWrapper data-display="table-cell">
+									<Checkbox checked={allChecked} onChange={toggleAllChecked} />
+								</CheckboxWrapper>
+							)}
+							{columns.map((item) => {
+								if (item.sortable) {
+									return (
+										<div
+											data-display="table-cell"
+											key={item.key || (item.field as string)}
+										>
+											<Button
+												display="block"
+												data-field={item.field}
+												plain
+												primary={sort?.field === item.field}
+												onClick={toggleSort(item.field)}
+											>
+												{item.label || item.field}
+												&nbsp;
+												<SortIcon
+													icon={faSort}
+													isSelected={sort?.field === item.field}
+												/>
+											</Button>
+										</div>
+									);
+								}
+								return (
+									<div
+										data-display="table-cell"
+										key={item.key || (item.field as string)}
+									>
+										{item.label || item.field}
+									</div>
+								);
+							})}
+						</div>
+					</div>
+					<div data-display="table-body">
+						{tbodyPrefix}
+						{sortedPagedData.map((row, i) => {
+							const classNamesList =
+								typeof getRowClass === 'function' ? getRowClass(row) : [];
+							const className = Array.isArray(classNamesList)
+								? classNamesList.join(' ')
+								: '';
+							const key = rowKey ? (row[rowKey] as any) : i;
+							return (
+								<TableRow<T>
+									isChecked={isChecked(row)}
+									isHighlighted={isHighlighted(row)}
+									isDisabled={isDisabled(row)}
+									key={key}
+									keyAttribute={key}
+									href={!!getRowHref ? getRowHref(row) : undefined}
+									data={row}
+									showCheck={!!onCheck}
+									columns={columns}
+									attributes={rowAnchorAttributes}
+									checkboxAttributes={rowCheckboxAttributes}
+									toggleChecked={toggleChecked}
+									onRowClick={rowClick}
+									className={className}
+								/>
+							);
+						})}
+					</div>
+				</Base>
+			</BaseTableWrapper>
+			{usePager &&
+				(!pagerPosition ||
+					pagerPosition === 'bottom' ||
+					pagerPosition === 'both') && (
+					<Pager
+						totalItems={data?.length ?? 0}
+						itemsPerPage={itemsPerPage ?? 50}
+						page={page}
+						nextPage={React.useCallback(() => setPage(page + 1), [page])}
+						prevPage={React.useCallback(() => setPage(page - 1), [page])}
+						mt={2}
+					/>
+				)}
+		</>
+	);
+};
+
+export { TableRow, TableColumn };

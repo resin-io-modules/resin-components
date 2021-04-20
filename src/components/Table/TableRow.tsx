@@ -44,8 +44,8 @@ export interface TableRowProps<T> {
 	isHighlighted: boolean;
 	isDisabled: boolean;
 	keyAttribute: string | number;
-	onRowClick: (e: any) => void;
-	toggleChecked: (e: any) => void;
+	onRowClick: (item: T, event: React.MouseEvent<HTMLAnchorElement>) => void;
+	toggleChecked: (item: T) => void;
 	showCheck: boolean;
 	columns: Array<TableColumn<T>>;
 	href?: string;
@@ -81,7 +81,7 @@ export class TableRow<T> extends React.PureComponent<TableRowProps<T>, {}> {
 							checked={isChecked}
 							disabled={isDisabled}
 							data-key={keyAttribute}
-							onChange={this.props.toggleChecked}
+							onChange={() => this.props.toggleChecked(data)}
 							{...checkboxAttributes}
 						/>
 					</CheckboxWrapper>
@@ -97,7 +97,7 @@ export class TableRow<T> extends React.PureComponent<TableRowProps<T>, {}> {
 							href={href}
 							data-display="table-cell"
 							data-key={keyAttribute}
-							onClick={this.props.onRowClick}
+							onClick={(event) => this.props.onRowClick(data, event)}
 							{...cellAttributes}
 							key={column.key || (column.field as string)}
 						>
