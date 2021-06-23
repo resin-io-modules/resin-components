@@ -1,15 +1,16 @@
 - commits:
-    - subject: 'download-image-modal: allow modal to accept releaseId'
-      hash: 03cc7aabe45bf51cc4f91a9363b2dd23677d1fcc
-      body: ''
+    - subject: Add analytics client
+      hash: cea18f3ca1d1ce543621a2858b79ce6a519cb593
+      body: |
+        Add analytics client
       footer:
         Change-type: minor
         change-type: minor
-        Signed-off-by: Tomás Migone <tomas@balena.io>
-        signed-off-by: Tomás Migone <tomas@balena.io>
-      author: Tomás Migone
+        Signed-off-by: Andrea Rosci <andrear@balena.io>
+        signed-off-by: Andrea Rosci <andrear@balena.io>
+      author: JSReds
   version: 20.19.0
-  date: 2021-06-22T17:39:44.153Z
+  date: 2021-06-23T08:08:26.001Z
 - commits:
     - subject: Fix unstable DownloadImageModal typing
       hash: 77e65b343938156ba91b586e9da3bb4d0e9c5264
