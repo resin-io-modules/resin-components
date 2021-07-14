@@ -1,4 +1,16 @@
 - commits:
+    - subject: Fix infinite updating notice when applying no tag changes
+      hash: 51ceba8abc3d14788920089ab911ceaf261602e2
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
+        signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
+      author: Matthew Yarmolinsky
+  version: 21.2.4
+  date: 2021-07-14T13:53:43.571Z
+- commits:
     - subject: Fix DownloadImageModal instructions step 1 typo
       hash: 9939be39d2dd8a0bf8eb8beb704d983aaa779654
       body: ''
