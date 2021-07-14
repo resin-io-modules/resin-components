@@ -109,6 +109,7 @@ export const ImageForm = ({
 			downloadConfigOnly,
 			network: model.network,
 			version: rawVersion,
+			provisioningKeyName: model.provisioningKeyName,
 		} as DownloadOptions;
 
 		if (typeof onDownloadStart === 'function') {
