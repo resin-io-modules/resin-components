@@ -71,6 +71,7 @@ export interface DownloadOptions {
 	releaseId?: number;
 	deviceType: string;
 	appUpdatePollInterval?: number;
+	provisioningKeyName?: string;
 	downloadConfigOnly?: boolean;
 	network: 'ethernet' | 'wifi';
 	version: string;
