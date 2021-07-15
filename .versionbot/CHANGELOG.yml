@@ -1,40 +1,15 @@
 - commits:
-    - subject: Fix DownloadImageModal instructions step 1 typo
-      hash: 9939be39d2dd8a0bf8eb8beb704d983aaa779654
+    - subject: Update downloadOptions to include provisioning key name
+      hash: f2b09d7edf14b64162692ba19e59620975d2fa2b
       body: ''
       footer:
-        Change-type: patch
-        change-type: patch
-        Signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
-        signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
-      author: Matthew Yarmolinsky
-  version: 21.2.3
-  date: 2021-07-14T13:35:43.747Z
-- commits:
-    - subject: Rename "All Tags" column to "Tags"
-      hash: 4d7ee547c80c28f1b85d989e56f88d7f2aa2b2d6
-      body: ''
-      footer:
-        Change-type: patch
-        change-type: patch
-        Signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
-        signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
-      author: Matthew Yarmolinsky
-  version: 21.2.2
-  date: 2021-07-14T12:28:00.309Z
-- commits:
-    - subject: Add Balena CI config
-      hash: 3266049f4f0da4c14e2c9e910faef76461bc462b
-      body: |
-        This should ensure we don't attempt to run test against node v10.
-      footer:
-        Change-type: patch
-        change-type: patch
-        Signed-off-by: Graham McCulloch <graham@balena.io>
-        signed-off-by: Graham McCulloch <graham@balena.io>
-      author: Graham McCulloch
-  version: 21.2.1
-  date: 2021-07-14T09:44:02.957Z
+        Change-Type: minor
+        change-type: minor
+        Signed-off-by: Nitish Agarwal <1592163+nitishagar@users.noreply.github.com>
+        signed-off-by: Nitish Agarwal <1592163+nitishagar@users.noreply.github.com>
+      author: Nitish Agarwal
+  version: 21.3.0
+  date: 2021-07-15T10:48:48.450Z
 - commits:
     - subject: 'Filters: Add optional filterFieldCompareFn prop'
       hash: 9651afa4a9d4d5f223ccf31e11d183585f538816
