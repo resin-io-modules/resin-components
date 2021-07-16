@@ -1,11 +1,6 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
-import { Input, InputProps } from '../Input';
-import { Textarea, TextareaProps } from '../Textarea';
 import { getJsonDescription } from './utils';
-import { Select, SelectProps } from '../Select';
 
 export const operators = {
 	contains: {
@@ -158,55 +153,4 @@ export const createFilter = (
 	}
 
 	return base;
-};
-
-interface OneOf {
-	const: string | boolean | number;
-	title: string;
-}
-
-export const Edit = ({
-	onUpdate,
-	slim,
-	...props
-}: DataTypeEditProps &
-	TextareaProps &
-	InputProps &
-	Omit<SelectProps<OneOf>, 'onChange'> & { slim?: boolean }) => {
-	const schemaItems = props.schema.items as JSONSchema | undefined;
-	if (schemaItems?.oneOf) {
-		return (
-			<Select<OneOf>
-				{...props}
-				options={schemaItems.oneOf || []}
-				valueKey="const"
-				labelKey="title"
-				value={
-					(schemaItems.oneOf || []).find(
-						(x: OneOf) => x.const === props.value,
-					) as OneOf
-				}
-				onChange={({ option }) => onUpdate(option.const.toString())}
-			/>
-		);
-	}
-	if (slim) {
-		return (
-			<Input
-				onChange={(e: React.FormEvent<HTMLInputElement>) =>
-					onUpdate(e.currentTarget.value)
-				}
-				{...props}
-			/>
-		);
-	}
-
-	return (
-		<Textarea
-			onChange={(e: React.FormEvent<HTMLTextAreaElement>) =>
-				onUpdate(e.currentTarget.value)
-			}
-			{...props}
-		/>
-	);
 };

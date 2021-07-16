@@ -1,8 +1,6 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString } from '../../utils';
-import { DataTypeEditProps, FilterSignature } from '../Filters';
-import { Select, SelectProps } from '../Select';
+import { FilterSignature } from '../Filters';
 import { getJsonDescription } from './utils';
 
 export const operators = {
@@ -39,7 +37,6 @@ export const decodeFilter = (filter: BooleanFilter): FilterSignature | null => {
 	} else {
 		return null;
 	}
-
 	return {
 		field,
 		operator,
@@ -75,19 +72,5 @@ export const createFilter = (
 			required: [field],
 		});
 	}
-
 	return base;
 };
-
-export const Edit = ({
-	value,
-	onUpdate,
-	...props
-}: DataTypeEditProps & SelectProps<string>) => (
-	<Select<string>
-		{...props}
-		options={['true', 'false']}
-		value={value ? 'true' : 'false'}
-		onChange={({ option }) => onUpdate(option === 'true')}
-	/>
-);

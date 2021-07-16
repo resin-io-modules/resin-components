@@ -1,9 +1,6 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
-import { Input, InputProps } from '../Input';
-import { getDefaultDate, normalizeDateTime } from './date-time-helpers';
+import { normalizeDateTime } from './date-time-helpers';
 import { getJsonDescription } from './utils';
 
 export const operators = {
@@ -130,25 +127,4 @@ export const createFilter = (
 	}
 
 	return base;
-};
-
-export const Edit = ({
-	value,
-	onUpdate,
-	...props
-}: DataTypeEditProps & InputProps & { slim?: boolean }) => {
-	// If a value isn't provided here, set the value to today's date
-	if (!value) {
-		onUpdate(getDefaultDate());
-	}
-	return (
-		<Input
-			{...props}
-			type="datetime-local"
-			value={value}
-			onChange={(e: React.FormEvent<HTMLInputElement>) =>
-				onUpdate(e.currentTarget.value)
-			}
-		/>
-	);
 };

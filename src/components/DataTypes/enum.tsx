@@ -1,8 +1,5 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
-import { Select, SelectProps } from '../Select';
 import { getJsonDescription } from './utils';
 
 export const operators = {
@@ -107,17 +104,3 @@ export const createFilter = (
 
 	return base;
 };
-
-export const Edit = ({
-	schema,
-	value,
-	onUpdate,
-	...props
-}: DataTypeEditProps & SelectProps<string>) => (
-	<Select<string>
-		{...props}
-		options={schema.enum as string[]}
-		value={value}
-		onChange={({ option }) => onUpdate(option)}
-	/>
-);

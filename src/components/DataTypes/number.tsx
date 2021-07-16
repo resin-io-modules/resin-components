@@ -1,8 +1,5 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
-import { Input, InputProps } from '../Input';
 import { getJsonDescription } from './utils';
 
 export const operators = {
@@ -125,18 +122,3 @@ export const createFilter = (
 
 	return base;
 };
-
-export const Edit = ({
-	value,
-	onUpdate,
-	...props
-}: DataTypeEditProps & InputProps & { slim?: boolean }) => (
-	<Input
-		{...props}
-		type="number"
-		value={value}
-		onChange={(e: React.FormEvent<HTMLInputElement>) =>
-			onUpdate(parseFloat(e.currentTarget.value))
-		}
-	/>
-);

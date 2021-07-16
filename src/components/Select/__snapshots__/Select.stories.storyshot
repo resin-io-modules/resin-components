@@ -6,7 +6,7 @@ exports[`Storyshots Core/Select Default 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-eJocfa gLjnqf sc-oeezt cXBTtc"
+      class="sc-iNiQyp eVJYHZ sc-jffHpj bjQYyx"
     >
       <button
         aria-label="Open Drop"
@@ -24,7 +24,7 @@ exports[`Storyshots Core/Select Default 1`] = `
             >
               <input
                 autocomplete="off"
-                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-jffHpj fuZjo"
+                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-laZMeE bjaLMO"
                 readonly=""
                 tabindex="-1"
                 type="text"
@@ -62,7 +62,7 @@ exports[`Storyshots Core/Select Emphasized 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-eJocfa gLjnqf sc-oeezt cXBTtc"
+      class="sc-iNiQyp eVJYHZ sc-jffHpj bjQYyx"
     >
       <button
         aria-label="Open Drop"
@@ -80,7 +80,7 @@ exports[`Storyshots Core/Select Emphasized 1`] = `
             >
               <input
                 autocomplete="off"
-                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-jffHpj hDHsCH"
+                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-laZMeE jVDeOZ"
                 readonly=""
                 tabindex="-1"
                 type="text"
@@ -118,7 +118,7 @@ exports[`Storyshots Core/Select Invalid 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-eJocfa hEvmex sc-oeezt cXBTtc"
+      class="sc-iNiQyp hcbcjb sc-jffHpj bjQYyx"
     >
       <button
         aria-label="Open Drop"
@@ -136,7 +136,7 @@ exports[`Storyshots Core/Select Invalid 1`] = `
             >
               <input
                 autocomplete="off"
-                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-jffHpj fuZjo"
+                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-laZMeE bjaLMO"
                 readonly=""
                 tabindex="-1"
                 type="text"
@@ -174,7 +174,7 @@ exports[`Storyshots Core/Select Object Options 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-eJocfa gLjnqf sc-oeezt cXBTtc"
+      class="sc-iNiQyp eVJYHZ sc-jffHpj bjQYyx"
     >
       <button
         aria-label="Open Drop"
@@ -192,7 +192,7 @@ exports[`Storyshots Core/Select Object Options 1`] = `
             >
               <input
                 autocomplete="off"
-                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-jffHpj fuZjo"
+                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-laZMeE bjaLMO"
                 readonly=""
                 tabindex="-1"
                 type="text"
@@ -230,7 +230,7 @@ exports[`Storyshots Core/Select With Custom Option 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-eJocfa gLjnqf sc-oeezt cXBTtc"
+      class="sc-iNiQyp eVJYHZ sc-jffHpj bjQYyx"
     >
       <button
         aria-label="Open Drop"
@@ -248,7 +248,7 @@ exports[`Storyshots Core/Select With Custom Option 1`] = `
             >
               <input
                 autocomplete="off"
-                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-jffHpj fuZjo"
+                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-laZMeE bjaLMO"
                 readonly=""
                 tabindex="-1"
                 type="text"
@@ -286,7 +286,7 @@ exports[`Storyshots Core/Select With Placeholder 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-eJocfa gLjnqf sc-oeezt cXBTtc"
+      class="sc-iNiQyp eVJYHZ sc-jffHpj bjQYyx"
     >
       <button
         aria-label="Open Drop"
@@ -304,7 +304,7 @@ exports[`Storyshots Core/Select With Placeholder 1`] = `
             >
               <input
                 autocomplete="off"
-                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-jffHpj fuZjo"
+                class="StyledTextInput-sc-1x30a0s-0 iNOFDY Select__SelectTextInput-sc-17idtfo-0 hZZumW sc-laZMeE bjaLMO"
                 placeholder="Select one..."
                 readonly=""
                 tabindex="-1"

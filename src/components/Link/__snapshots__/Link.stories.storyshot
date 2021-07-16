@@ -6,7 +6,7 @@ exports[`Storyshots Core/Link Blank Target 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <a
-      class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+      class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
       color="primary.main"
       href="https://balena.io"
       rel="noopener"
@@ -24,7 +24,7 @@ exports[`Storyshots Core/Link Default 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <a
-      class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+      class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
       color="primary.main"
       href="#"
     >
@@ -40,7 +40,7 @@ exports[`Storyshots Core/Link Disabled 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <a
-      class="sc-eGJWMs lotDuK sc-csTbgd gyTKxM"
+      class="sc-jHNicF hkfWBP sc-amiJK gypVqd"
       color="primary.main"
       disabled=""
     />

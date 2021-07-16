@@ -366,13 +366,6 @@ export interface EditModel {
 	value: string | number | { [k: string]: string };
 }
 
-export interface FilterInputProps {
-	schema: JSONSchema;
-	value: any;
-	operator: string;
-	onUpdate: (value: any) => void;
-}
-
 export interface ViewScope {
 	slug: string;
 	name: string;
