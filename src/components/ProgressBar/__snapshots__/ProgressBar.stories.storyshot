@@ -6,21 +6,21 @@ exports[`Storyshots Core/ProgressBar Default 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-WZYut bucJPz sc-ikXwFM hzaHUi"
+      class="sc-daBunf fUeVXU sc-jUfyBS cBAbVR"
       color="#fff"
     >
       <div
-        class="sc-dtLLSn hCgWJd"
+        class="sc-hOPeYd cjTBkL"
       >
         10
         %
       </div>
       <div
-        class="sc-fHCHyC dlMiAc"
+        class="sc-kHWWYL hsReWJ"
         style="width: 10%;"
       >
         <div
-          class="sc-dkQUaI bpwCpL"
+          class="sc-dsXzNU CFDim"
           style="width: 1000%;"
         >
           10
@@ -38,22 +38,22 @@ exports[`Storyshots Core/ProgressBar Different Color 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-WZYut bucJPz sc-ikXwFM hzaHUi"
+      class="sc-daBunf fUeVXU sc-jUfyBS cBAbVR"
       color="#fff"
       type="danger"
     >
       <div
-        class="sc-dtLLSn hCgWJd"
+        class="sc-hOPeYd cjTBkL"
       >
         10
         %
       </div>
       <div
-        class="sc-fHCHyC femlEu"
+        class="sc-kHWWYL iIbyTr"
         style="width: 10%;"
       >
         <div
-          class="sc-dkQUaI bpwCpL"
+          class="sc-dsXzNU CFDim"
           style="width: 1000%;"
         >
           10
@@ -71,21 +71,21 @@ exports[`Storyshots Core/ProgressBar Emphasized 1`] = `
     class="StyledGrommet-sc-19lkkz7-0 jXAVEG sc-eEVmNe jhNcBG"
   >
     <div
-      class="sc-WZYut fKFfGu sc-ikXwFM hzaHUi"
+      class="sc-daBunf hIFTsZ sc-jUfyBS cBAbVR"
       color="#fff"
     >
       <div
-        class="sc-dtLLSn hCgWJd"
+        class="sc-hOPeYd cjTBkL"
       >
         10
         %
       </div>
       <div
-        class="sc-fHCHyC dlMiAc"
+        class="sc-kHWWYL hsReWJ"
         style="width: 10%;"
       >
         <div
-          class="sc-dkQUaI bpwCpL"
+          class="sc-dsXzNU CFDim"
           style="width: 1000%;"
         >
           10

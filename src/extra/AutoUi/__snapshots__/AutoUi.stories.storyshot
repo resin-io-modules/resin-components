@@ -25,7 +25,7 @@ exports[`Storyshots Extra/AutoUICollection Default 1`] = `
                 order="-1,-1,-1,0"
               >
                 <div
-                  class="sc-gKAaRy iZvmHx sc-iCoGMd hoKXmw sc-fcmMJX faUBoe"
+                  class="sc-gKAaRy iZvmHx sc-iCoGMd hoKXmw sc-fXgAZx hjitKH"
                 >
                   <div
                     class="sc-gKAaRy iZvmHx sc-iCoGMd fbiImu sc-hHEiqL eWQPeQ"
@@ -59,7 +59,7 @@ exports[`Storyshots Extra/AutoUICollection Default 1`] = `
                       </div>
                     </button>
                     <div
-                      class="sc-fuISkM juRfbW"
+                      class="sc-bQCEYZ fXUGeD"
                     >
                       <div
                         class="sc-khIgEk bsANAN sc-hTRkXV irvSbW"
@@ -86,13 +86,13 @@ exports[`Storyshots Extra/AutoUICollection Default 1`] = `
                       </div>
                     </div>
                     <div
-                      class="sc-kHWWYL"
+                      class="sc-eHEENL"
                     >
                       <div
-                        class="sc-gKAaRy iZvmHx sc-iCoGMd fbiImu sc-jOFryr bwDtGt sc-bTDOke cQRkfA"
+                        class="sc-gKAaRy iZvmHx sc-iCoGMd fbiImu sc-gGLxEB eYtsOQ sc-FRrlG igGaMO"
                       >
                         <button
-                          class="StyledButton-sc-323bzc-0 KXpyO sc-bqGGPW sc-hBMUJo ffJBuc mONCh sc-dIvrsQ jZURTW sc-eKYRIR gQHFoo"
+                          class="StyledButton-sc-323bzc-0 KXpyO sc-bqGGPW sc-hBMUJo ffJBuc mONCh sc-dIvrsQ jZURTW sc-fbIWvP eTtWmK"
                           type="button"
                         >
                           <div
@@ -152,7 +152,7 @@ exports[`Storyshots Extra/AutoUICollection Default 1`] = `
               />
             </div>
             <div
-              class="sc-gKAaRy iZvmHx sc-iCoGMd hoKXmw sc-fcmMJX faUBoe"
+              class="sc-gKAaRy iZvmHx sc-iCoGMd hoKXmw sc-fXgAZx hjitKH"
             >
               <div
                 class="sc-gKAaRy iZvmHx sc-iCoGMd fbiImu sc-hHEiqL eWQPeQ"
@@ -608,10 +608,10 @@ exports[`Storyshots Extra/AutoUICollection Default 1`] = `
               class="sc-iXeHaJ gocTvx"
             >
               <div
-                class="sc-gKAaRy iZvmHx sc-iCoGMd fbiImu sc-jOFryr bwDtGt sc-bTDOke fXFHeC"
+                class="sc-gKAaRy iZvmHx sc-iCoGMd fbiImu sc-gGLxEB eYtsOQ sc-FRrlG fljcEQ"
               >
                 <button
-                  class="StyledButton-sc-323bzc-0 fshUsC sc-bqGGPW sc-bkbkJK ffJBuc jLVuZo sc-dIvrsQ jZURTW sc-eKYRIR gQHFoo"
+                  class="StyledButton-sc-323bzc-0 fshUsC sc-bqGGPW sc-bkbkJK ffJBuc jLVuZo sc-dIvrsQ jZURTW sc-fbIWvP eTtWmK"
                   type="button"
                 >
                   <div

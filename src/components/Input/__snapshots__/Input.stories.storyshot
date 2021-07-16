@@ -10,7 +10,7 @@ exports[`Storyshots Core/Input Default 1`] = `
     >
       <input
         autocomplete="off"
-        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-jgPyTC eyCtVz sc-gSYDnn jJgXuM"
+        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-bXexck bKviZT sc-eGJWMs rZMHA"
         value=""
       />
     </div>
@@ -28,7 +28,7 @@ exports[`Storyshots Core/Input Emphasized 1`] = `
     >
       <input
         autocomplete="off"
-        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-jgPyTC eWDZKw sc-gSYDnn jJgXuM"
+        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-bXexck fupnEI sc-eGJWMs rZMHA"
         value=""
       />
     </div>
@@ -46,7 +46,7 @@ exports[`Storyshots Core/Input Monospace 1`] = `
     >
       <input
         autocomplete="off"
-        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-jgPyTC kWYLGm sc-gSYDnn jJgXuM"
+        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-bXexck iUpkoi sc-eGJWMs rZMHA"
         value=""
       />
     </div>
@@ -64,7 +64,7 @@ exports[`Storyshots Core/Input With Placeholder 1`] = `
     >
       <input
         autocomplete="off"
-        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-jgPyTC eyCtVz sc-gSYDnn jJgXuM"
+        class="StyledTextInput-sc-1x30a0s-0 dLVFDJ sc-bXexck bKviZT sc-eGJWMs rZMHA"
         placeholder="This is a placeholder"
         value=""
       />
