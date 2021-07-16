@@ -1,14 +1,9 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
 import find from 'lodash/find';
 import findKey from 'lodash/findKey';
-import includes from 'lodash/includes';
 import mapValues from 'lodash/mapValues';
 import pick from 'lodash/pick';
-import * as React from 'react';
 import { regexEscape } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
-import { Flex } from '../Flex';
-import { Input } from '../Input';
 import { getJsonDescription } from './utils';
 
 const getKeyLabel = (schema: JSONSchema) => {
@@ -62,8 +57,6 @@ export const operators = {
 
 type OperatorSlug = keyof typeof operators;
 
-const commonOperators: OperatorSlug[] = ['is', 'is_not'];
-
 const keySpecificOperators: OperatorSlug[] = [
 	'key_is',
 	'key_contains',
@@ -72,22 +65,12 @@ const keySpecificOperators: OperatorSlug[] = [
 	'key_not_matches_re',
 ];
 
-const keyOperators: OperatorSlug[] = [
-	...commonOperators,
-	...keySpecificOperators,
-];
-
 const valueSpecificOperators: OperatorSlug[] = [
 	'value_is',
 	'value_contains',
 	'value_not_contains',
 	'value_matches_re',
 	'value_not_matches_re',
-];
-
-const valueOperators: OperatorSlug[] = [
-	...commonOperators,
-	...valueSpecificOperators,
 ];
 
 interface SubSchema {
@@ -349,63 +332,4 @@ export const createFilter = (
 	}
 
 	return base;
-};
-
-export const Edit = (props: DataTypeEditProps) => {
-	const { schema, onUpdate, operator } = props;
-	let { value } = props;
-
-	const schemaKey = findKey(schema.properties!, { description: 'key' })!;
-	const schemaValue = findKey(schema.properties!, { description: 'value' })!;
-	const keyLabel = (schema.properties![schemaKey] as JSONSchema).title || 'Key';
-	const valueLabel =
-		(schema.properties![schemaValue] as JSONSchema).title || 'Value';
-
-	// Convert strings to objects
-	if (typeof value === 'string') {
-		const p: { [k: string]: string } = {};
-		if (includes(valueOperators, operator)) {
-			p[schemaValue] = value;
-		}
-		if (includes(keyOperators, operator)) {
-			p[schemaKey] = value;
-		}
-
-		value = p;
-	}
-
-	return (
-		<Flex flexWrap="wrap">
-			{includes(keyOperators, operator) && (
-				<Input
-					type="text"
-					value={value ? value[schemaKey] : ''}
-					mr={2}
-					mb={1}
-					placeholder={keyLabel}
-					onChange={(e: React.FormEvent<HTMLInputElement>) =>
-						onUpdate(
-							Object.assign(value, {
-								[schemaKey]: e.currentTarget.value,
-							}),
-						)
-					}
-				/>
-			)}
-			{includes(valueOperators, operator) && (
-				<Input
-					type="text"
-					value={value ? value[schemaValue] : ''}
-					placeholder={valueLabel}
-					onChange={(e: React.FormEvent<HTMLInputElement>) =>
-						onUpdate(
-							Object.assign(value, {
-								[schemaValue]: e.currentTarget.value,
-							}),
-						)
-					}
-				/>
-			)}
-		</Flex>
-	);
 };
