@@ -1,4 +1,27 @@
 - commits:
+    - subject: Generate snapshots
+      hash: c23c40fe490ecd19e047f3d3cf1f5f2304d5b028
+      body: |
+        Generate snapshots
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Andrea Rosci <andrear@balena.io>
+        signed-off-by: Andrea Rosci <andrear@balena.io>
+      author: JSReds
+    - subject: Replace custom filter Edit with Form
+      hash: a42269fddc671ad8dd5618df2c4a0d751ee290ba
+      body: |
+        Replace custom filter Edit with Form
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Andrea Rosci <andrear@balena.io>
+        signed-off-by: Andrea Rosci <andrear@balena.io>
+      author: JSReds
+  version: 21.5.0
+  date: 2021-07-16T13:23:01.114Z
+- commits:
     - subject: Update snapshots
       hash: f42ede07fe7ca441afa7ce8825c240472886c84e
       body: |
