@@ -93,8 +93,6 @@ const translationMap = {
 	'info.applications_support_devices_with_same_architecture':
 		'Applications can support any devices that share the same architecture as their default device type.',
 
-	'redirects.view_docs': 'View docs',
-
 	// autoUI
 
 	'labels.actions': 'Actions',
