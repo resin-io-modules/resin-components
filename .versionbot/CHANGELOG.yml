@@ -1,6 +1,8 @@
 - commits:
-    - subject: Add disabled tooltip to DownloadImageModal ("Add device" modal)
-      hash: 389be1a7ed5d68936a2bacd3ff03d637ce8937bd
+    - subject: >-
+        Add `docsIcon` property to DownloadImageModal so it can use the docs
+        icon
+      hash: 9f434547ff5528917fc2d5af117fe2801a40e8fc
       body: ''
       footer:
         Change-type: patch
@@ -8,31 +10,8 @@
         Signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
         signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
       author: Matthew Yarmolinsky
-  version: 21.4.1
-  date: 2021-07-20T14:56:09.349Z
-- commits:
-    - subject: Update snapshots
-      hash: f42ede07fe7ca441afa7ce8825c240472886c84e
-      body: |
-        No code changes - just dependency updates
-      footer:
-        Change-type: patch
-        change-type: patch
-        Signed-off-by: Graham McCulloch <graham@balena.io>
-        signed-off-by: Graham McCulloch <graham@balena.io>
-      author: Graham McCulloch
-    - subject: 'feat: Add new ProgressBar Renderer widget'
-      hash: 0aef23e961e09cf95c6fe984ada1d1d73483e372
-      body: |
-        This widget supports numeric values only.
-      footer:
-        Change-type: minor
-        change-type: minor
-        Signed-off-by: Graham McCulloch <graham@balena.io>
-        signed-off-by: Graham McCulloch <graham@balena.io>
-      author: Graham McCulloch
-  version: 21.4.0
-  date: 2021-07-16T01:30:00.020Z
+  version: 21.3.1
+  date: 2021-07-20T19:03:05.262Z
 - commits:
     - subject: Add additional custom download image modal actions
       hash: 6e7f58ae8111e668814a1b72bf4dba418240f250
