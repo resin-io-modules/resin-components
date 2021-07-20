@@ -57,6 +57,7 @@ const BaseInput = (props: FormWidgetProps) => {
 				// Form suggestions will clash with browser suggestions if autocomplete is on
 				autoComplete={hasExamples ? 'off' : (options.autoComplete as string)}
 				emphasized={options.emphasized as boolean}
+				data-field={`${schema.type} + ${widgets} + ${placeholder}`}
 				value={value == null ? '' : value}
 				type={
 					schema.type === 'number'
