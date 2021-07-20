@@ -1,4 +1,18 @@
 - commits:
+    - subject: >-
+        Add `docsIcon` property to DownloadImageModal so it can use the docs
+        icon
+      hash: 9f434547ff5528917fc2d5af117fe2801a40e8fc
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
+        signed-off-by: Matthew Yarmolinsky <matthew-timothy@balena.io>
+      author: Matthew Yarmolinsky
+  version: 21.3.1
+  date: 2021-07-20T19:05:28.165Z
+- commits:
     - subject: Add additional custom download image modal actions
       hash: 6e7f58ae8111e668814a1b72bf4dba418240f250
       body: |
