@@ -14,6 +14,7 @@ import {
 } from '../../contexts/WidgetContext';
 import { TranslationContext } from '../../contexts/TranslationContext';
 import { HistoryContext } from '../../contexts/HistoryContext';
+import { AnalyticsContext, Analytics } from '../../contexts/AnalyticsContext';
 import type { History } from 'history';
 
 const Base = styled(Grommet)`
@@ -27,25 +28,27 @@ const BaseProvider = ({
 	widgets,
 	t,
 	history,
+	analytics,
 	...props
 }: ThemedProvider) => {
 	const isDefaultFont = !theme?.font;
 	const providerTheme = merge(cloneDeep(defaultTheme), theme);
-
 	return (
 		<BreakpointProvider breakpoints={providerTheme.breakpoints}>
 			<WidgetContext.Provider value={widgets ?? {}}>
 				<TranslationContext.Provider value={t ?? {}}>
 					<HistoryContext.Provider value={history ?? null}>
-						{isDefaultFont && (
-							<Helmet>
-								<link
-									href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&family=Ubuntu+Mono:wght@400;700&display=fallback"
-									rel="stylesheet"
-								/>
-							</Helmet>
-						)}
-						<Base theme={providerTheme} {...props} />
+						<AnalyticsContext.Provider value={analytics ?? null}>
+							{isDefaultFont && (
+								<Helmet>
+									<link
+										href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&family=Ubuntu+Mono:wght@400;700&display=fallback"
+										rel="stylesheet"
+									/>
+								</Helmet>
+							)}
+							<Base theme={providerTheme} {...props} />
+						</AnalyticsContext.Provider>
 					</HistoryContext.Provider>
 				</TranslationContext.Provider>
 			</WidgetContext.Provider>
@@ -60,6 +63,7 @@ export interface ThemedProvider
 	dir?: GrommetProps['dir'];
 	t?: any; // useTranslation
 	history?: History; // Application Router history
+	analytics?: Analytics;
 }
 
 export const Provider = BaseProvider;

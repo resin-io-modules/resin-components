@@ -7,6 +7,8 @@ import {
 	Filters as RenditionFilters,
 } from '../../../components/Filters';
 import { useHistory } from '../../../hooks/useHistory';
+import { useAnalytics } from '../../../hooks/useAnalytics';
+import { FULL_TEXT_SLUG } from '../../../components/Filters/SchemaSieve';
 
 interface FiltersProps<T> {
 	schema: JSONSchema;
@@ -24,6 +26,47 @@ export const Filters = <T extends AutoUIBaseResource<T>>({
 	renderMode,
 }: FiltersProps<T>) => {
 	const history = useHistory();
+	const { analyticsClient } = useAnalytics();
+
+	React.useEffect(() => {
+		if (!analyticsClient || !filters?.length) {
+			return;
+		}
+		const analyticsObj: {
+			searchText: string;
+			field: string[];
+			operator: string[];
+			value: string[];
+		} = {
+			searchText: '',
+			field: [],
+			operator: [],
+			value: [],
+		};
+
+		filters.forEach((filter) => {
+			if (filter.title === FULL_TEXT_SLUG) {
+				// @ts-expect-error
+				analyticsObj.searchText = filter.anyOf[0].description.replace(
+					'Any field contains ',
+					'',
+				);
+			} else {
+				filter.anyOf?.forEach((item: JSONSchema) => {
+					const filterObj: { name: string; operator: string; value: string } =
+						item.description && JSON.parse(item.description);
+					if (filterObj) {
+						analyticsObj.field.push(filterObj.name);
+						analyticsObj.operator.push(filterObj.operator);
+						analyticsObj.value.push(filterObj.value);
+					}
+				});
+			}
+		});
+
+		analyticsClient.track('Filters Action', analyticsObj);
+	}, [filters]);
+
 	return (
 		<>
 			{!!history ? (
