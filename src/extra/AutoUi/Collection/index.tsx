@@ -235,7 +235,11 @@ export const AutoUICollection = <T extends AutoUIBaseResource<T>>({
 
 	const changeTags = React.useCallback(
 		async (tags: SubmitInfo<ResourceTagSubmitInfo, ResourceTagSubmitInfo>) => {
-			if (!sdk?.tags) {
+			if (
+				!sdk?.tags ||
+				Object.values(tags).filter((changedTags) => changedTags.length > 0)
+					.length === 0
+			) {
 				return;
 			}
 
