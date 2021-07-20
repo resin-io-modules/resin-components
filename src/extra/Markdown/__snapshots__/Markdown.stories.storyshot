@@ -551,7 +551,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
           class="sc-fKgJPI jlSUcY sc-cxNHIi bbLfYA"
         >
           <a
-            class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+            class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
             color="primary.main"
             href="http://github.com"
           >
@@ -565,7 +565,7 @@ exports[`Storyshots Extra/Markdown Default 1`] = `
           class="sc-fKgJPI jlSUcY sc-cxNHIi bbLfYA"
         >
           <a
-            class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+            class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
             color="primary.main"
             href="http://github.com"
           >
@@ -889,7 +889,7 @@ const foo = () =&gt; {
           
 
           <a
-            class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+            class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
             color="primary.main"
             href="http://github.com/"
           >
@@ -952,7 +952,7 @@ exports[`Storyshots Extra/Markdown With Decorators 1`] = `
              foo @bad@bad 
           </span>
           <a
-            class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+            class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
             color="primary.main"
             href="https://github.com"
           >

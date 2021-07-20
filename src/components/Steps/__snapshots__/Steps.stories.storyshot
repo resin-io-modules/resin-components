@@ -558,7 +558,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
               </svg>
             </div>
             <a
-              class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+              class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
               color="primary.main"
             >
               Doesn't have
@@ -617,7 +617,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
               </svg>
             </div>
             <a
-              class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+              class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
               color="primary.main"
             >
               Title or dismiss button
@@ -657,7 +657,7 @@ exports[`Storyshots Core/Steps Without Borders 1`] = `
             class="sc-gKAaRy iZvmHx sc-iCoGMd cqkiat sc-hHEiqL kNzcmQ"
           >
             <a
-              class="sc-eGJWMs cCoTdW sc-csTbgd gyTKxM"
+              class="sc-jHNicF eRZRcf sc-amiJK gypVqd"
               color="primary.main"
             >
               That's it (no icon)

@@ -21,12 +21,12 @@ exports[`Storyshots Core/Navbar Default 1`] = `
               class="sc-gKAaRy iZvmHx sc-iCoGMd cePEKz sc-hkoqWr coUVvI"
             >
               <a
-                class="sc-eGJWMs djmdVr sc-csTbgd cuhYhL"
+                class="sc-jHNicF jsnKAK sc-amiJK gPoJQy"
                 color="white"
                 href="/"
               >
                 <img
-                  class="sc-bXexck bEwFOL"
+                  class="sc-TtZnY irpCwF"
                   src=""
                   style="height: 20px;"
                 />
@@ -62,7 +62,7 @@ exports[`Storyshots Core/Navbar Default 1`] = `
                 class="sc-gKAaRy iZvmHx sc-iCoGMd dSzdry"
               >
                 <a
-                  class="sc-eGJWMs djmdVr sc-csTbgd cuhYhL"
+                  class="sc-jHNicF jsnKAK sc-amiJK gPoJQy"
                   color="white"
                   href="/docs/"
                 >
@@ -73,7 +73,7 @@ exports[`Storyshots Core/Navbar Default 1`] = `
                 class="sc-gKAaRy iZvmHx sc-iCoGMd dSzdry"
               >
                 <a
-                  class="sc-eGJWMs djmdVr sc-csTbgd cuhYhL"
+                  class="sc-jHNicF jsnKAK sc-amiJK gPoJQy"
                   color="white"
                   href="/changelog/"
                 >
@@ -84,7 +84,7 @@ exports[`Storyshots Core/Navbar Default 1`] = `
                 class="sc-gKAaRy iZvmHx sc-iCoGMd dSzdry"
               >
                 <a
-                  class="sc-eGJWMs djmdVr sc-csTbgd cuhYhL"
+                  class="sc-jHNicF jsnKAK sc-amiJK gPoJQy"
                   color="white"
                   href="/gitter/"
                 >

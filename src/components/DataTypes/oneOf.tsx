@@ -1,8 +1,5 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
-import { Select, SelectProps } from '../Select';
 import { getJsonDescription } from './utils';
 
 const getCaption = (value: any, schema: JSONSchema) => {
@@ -115,24 +112,3 @@ export const createFilter = (
 
 	return base;
 };
-
-interface OneOf {
-	const: string | boolean | number;
-	title: string;
-}
-
-export const Edit = ({
-	schema,
-	value,
-	onUpdate,
-	...props
-}: DataTypeEditProps & SelectProps<OneOf>) => (
-	<Select<OneOf>
-		{...props}
-		options={(schema.oneOf as OneOf[]) || []}
-		valueKey="const"
-		labelKey="title"
-		value={(schema.oneOf || []).find((x: OneOf) => x.const === value) as OneOf}
-		onChange={({ option }) => onUpdate(option.const.toString())}
-	/>
-);

@@ -1,10 +1,6 @@
 import { JSONSchema7 as JSONSchema } from 'json-schema';
-import * as React from 'react';
 import { randomString, regexEscape } from '../../utils';
-import { DataTypeEditProps } from '../Filters';
 import { FULL_TEXT_SLUG } from '../Filters/SchemaSieve';
-import { Input, InputProps } from '../Input';
-import { Textarea, TextareaProps } from '../Textarea';
 import { getJsonDescription } from './utils';
 
 export const operators = {
@@ -228,30 +224,4 @@ export const createFilter = (
 	}
 
 	return base;
-};
-
-export const Edit = ({
-	onUpdate,
-	slim,
-	...props
-}: DataTypeEditProps & TextareaProps & InputProps & { slim?: boolean }) => {
-	if (slim) {
-		return (
-			<Input
-				onChange={(e: React.FormEvent<HTMLInputElement>) =>
-					onUpdate(e.currentTarget.value)
-				}
-				{...props}
-			/>
-		);
-	}
-
-	return (
-		<Textarea
-			onChange={(e: React.FormEvent<HTMLTextAreaElement>) =>
-				onUpdate(e.currentTarget.value)
-			}
-			{...props}
-		/>
-	);
 };

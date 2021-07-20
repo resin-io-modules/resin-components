@@ -7,13 +7,12 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '../Button';
 import { Box } from '../Box';
-import { getDataModel } from '../DataTypes';
 import { Flex } from '../Flex';
 import { Modal } from '../Modal';
 import { Select } from '../Select';
 import { Txt } from '../Txt';
 import * as SchemaSieve from './SchemaSieve';
-
+import { Form } from '../Form';
 export interface FilterFieldOption {
 	field: string;
 	title: string;
@@ -32,13 +31,6 @@ export interface FilterModalProps {
 	fieldCompareFn?: FilterFieldCompareFn;
 }
 
-export interface FilterInputProps {
-	schema: JSONSchema;
-	value: any;
-	operator: string;
-	onUpdate: (value: any) => void;
-}
-
 export interface EditModel {
 	field: string;
 	operator: string;
@@ -47,27 +39,6 @@ export interface EditModel {
 
 const defaultFilterCompareFn: FilterFieldCompareFn = (a, b) => {
 	return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
-};
-
-const FilterInput = (props: FilterInputProps) => {
-	const model = getDataModel(props.schema);
-
-	if (!model) {
-		return null;
-	}
-
-	const Edit = model.Edit as React.FC<any>;
-	// TODO: change this logic as it will not work in future versions
-	// WARNING: Cannot update a component from inside the function body of a different component
-	return (
-		<Edit
-			schema={props.schema}
-			value={props.value}
-			operator={props.operator}
-			onUpdate={props.onUpdate}
-			slim
-		/>
-	);
 };
 
 const RelativeBox = styled(Box)`
@@ -197,11 +168,12 @@ export const FilterModal = ({
 								</Box>
 							)}
 							<Box flex={1}>
-								<FilterInput
-									operator={operator}
-									value={value}
+								<Form
 									schema={schema.properties![field] as JSONSchema}
-									onUpdate={(v: any) => setEditValue(v, index)}
+									value={value}
+									onFormChange={({ formData }) => setEditValue(formData, index)}
+									uiSchema={{ 'ui:options': { label: false } }}
+									hideSubmitButton
 								/>
 							</Box>
 						</Flex>
