@@ -16,7 +16,6 @@
     "strictNullChecks": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "allowJs": true,
     "esModuleInterop": true,
     "baseUrl": ".",
     "keyofStringsOnly": true,
