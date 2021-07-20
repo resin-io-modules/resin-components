@@ -27,6 +27,7 @@ import { useTranslation } from '../../hooks/useTranslation';
 import { stripVersionBuild } from './utils';
 import { OsConfiguration } from './OsConfiguration';
 import { FormModel } from './FormModel';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export const DeviceLogo = styled(Img)<{ small?: boolean }>`
 	// To prevent Save Image dialog
@@ -111,6 +112,7 @@ export interface UnstableTempDownloadImageModalProps {
 		}
 	>;
 	authToken?: string;
+	docsIcon?: IconProp;
 }
 
 export const UnstableTempDownloadImageModal = ({
@@ -131,6 +133,7 @@ export const UnstableTempDownloadImageModal = ({
 	onClose,
 	modalActions,
 	authToken,
+	docsIcon,
 }: UnstableTempDownloadImageModalProps) => {
 	const { t } = useTranslation();
 	const [deviceType, setDeviceType] = React.useState(initialDeviceType);
@@ -307,6 +310,7 @@ export const UnstableTempDownloadImageModal = ({
 												hasEsrVersions={
 													deviceTypeHasEsr[deviceType.slug] ?? false
 												}
+												docsIcon={docsIcon}
 											/>
 										}
 									/>

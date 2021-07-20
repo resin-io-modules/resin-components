@@ -23,6 +23,9 @@ import { DeviceType, OsVersionsByDeviceType } from './models';
 import { useTranslation } from '../../hooks/useTranslation';
 import styled from 'styled-components';
 import { getOsVariantDisplayText } from './utils';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { faFileAlt } from '@fortawesome/free-regular-svg-icons/faFileAlt';
 
 export const DownloadImageLabel = styled.label`
 	display: flex;
@@ -45,6 +48,7 @@ interface OsConfigurationProps {
 	onSelectedDeviceTypeChange: (deviceType: DeviceType) => void;
 	onSelectedVersionChange: (osVersion: string) => void;
 	onSelectedOsTypeChange: (osType: string) => void;
+	docsIcon?: IconProp;
 }
 
 export type BuildVariant = 'dev' | 'prod';
@@ -150,6 +154,7 @@ export const OsConfiguration = ({
 	onSelectedVersionChange,
 	onSelectedDeviceTypeChange,
 	onSelectedOsTypeChange,
+	docsIcon,
 }: OsConfigurationProps) => {
 	const { t } = useTranslation();
 	const [showAllVersions, setShowAllVersions] = React.useState(false);
@@ -257,7 +262,10 @@ export const OsConfiguration = ({
 					<Box flex={2} ml={2}>
 						<DownloadImageLabel>
 							{t('placeholders.select_os_type_status')}{' '}
-							<DocsLink href="https://www.balena.io/docs/reference/OS/extended-support-release" />
+							<DocsLink
+								href="https://www.balena.io/docs/reference/OS/extended-support-release"
+								docsIcon={docsIcon}
+							/>
 						</DownloadImageLabel>
 						<OsTypeSelector
 							supportedOsTypes={osTypes}
@@ -324,13 +332,13 @@ export const OsConfiguration = ({
 
 interface DocsLinkProps {
 	href: string;
+	docsIcon?: IconProp;
 }
 
-export const DocsLink = ({ href }: DocsLinkProps) => {
-	const { t } = useTranslation();
+export const DocsLink = ({ href, docsIcon }: DocsLinkProps) => {
 	return (
 		<Link blank href={href} fontSize={2} ml={2}>
-			{t('redirects.view_docs')}
+			<FontAwesomeIcon icon={docsIcon || faFileAlt} />
 		</Link>
 	);
 };
