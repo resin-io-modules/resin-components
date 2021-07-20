@@ -1,14 +1,14 @@
+import pick from 'lodash/pick';
 import * as React from 'react';
 import styled from 'styled-components';
-import { RenditionSystemProps } from '../../common-types';
 
 import { rotate360 } from '../../animations';
-import asRendition from '../../asRendition';
 import { px } from '../../utils';
+import { Box, BoxProps } from '../Box';
 import { Flex } from '../Flex';
 import { Txt } from '../Txt';
 
-const CircleLoader = styled.div<Pick<InternalSpinnerProps, 'emphasized'>>`
+const CircleLoader = styled.div<Pick<SpinnerProps, 'emphasized'>>`
 	background: transparent !important;
 	width: ${(props) => px(props.emphasized ? 40 : 20)};
 	height: ${(props) => px(props.emphasized ? 40 : 20)};
@@ -21,7 +21,7 @@ const CircleLoader = styled.div<Pick<InternalSpinnerProps, 'emphasized'>>`
 	animation-fill-mode: both;
 `;
 
-const Container = styled.div`
+const Container = styled(Box)`
 	position: relative;
 `;
 
@@ -31,20 +31,18 @@ const SpinnerContainer = styled(Flex)`
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 4;
 `;
 
-const ChildrenContainer = styled.div<Pick<InternalSpinnerProps, 'show'>>`
+const ChildrenContainer = styled(Box)<Pick<SpinnerProps, 'show'>>`
 	opacity: ${(props) => (props.show ? 0.4 : 1)};
 	transition: opacity 250ms;
-	z-index: 3;
 `;
 
 const Base = ({
 	label,
 	emphasized,
 	...otherProps
-}: Omit<InternalSpinnerProps, 'show'>) => {
+}: Omit<SpinnerProps, 'show'>) => {
 	return (
 		<Flex
 			flexDirection={emphasized ? 'column' : 'row'}
@@ -63,35 +61,21 @@ const Base = ({
 	);
 };
 
-const BaseSpinner = ({
-	show = true,
-	emphasized,
-	label,
-	children,
-	...otherProps
-}: InternalSpinnerProps) => {
-	if (!children) {
-		if (!show) {
-			return null;
-		}
+const childrenWiredPropNames = [
+	'display',
+	'alignContent',
+	'alignItems',
+	'alignSelf',
+	'flex',
+	'flexBasis',
+	'flexDirection',
+	'flexWrap',
+	'justifyContent',
+	'justifyItems',
+	'justifySelf',
+];
 
-		return <Base label={label} emphasized={emphasized} {...otherProps} />;
-	}
-
-	return (
-		<Container {...otherProps}>
-			{show && (
-				<SpinnerContainer justifyContent="center" alignItems="center">
-					<Base label={label} emphasized={emphasized} />
-				</SpinnerContainer>
-			)}
-
-			<ChildrenContainer show={show}>{children}</ChildrenContainer>
-		</Container>
-	);
-};
-
-interface InternalSpinnerProps extends React.HTMLAttributes<HTMLElement> {
+export interface SpinnerProps extends BoxProps {
 	/** If passed, it will control whether the spinner is shown or not */
 	show?: boolean;
 	/** If true, it will render a large spinner */
@@ -100,8 +84,34 @@ interface InternalSpinnerProps extends React.HTMLAttributes<HTMLElement> {
 	label?: string | React.ReactNode;
 }
 
-export type SpinnerProps = InternalSpinnerProps & RenditionSystemProps;
-
 /** [View story source](https://github.com/balena-io-modules/rendition/blob/master/src/components/Spinner/Spinner.stories.tsx) */
-export const Spinner =
-	asRendition<React.FunctionComponent<SpinnerProps>>(BaseSpinner);
+export const Spinner = ({
+	show = true,
+	emphasized,
+	label,
+	children,
+	...otherProps
+}: SpinnerProps) => {
+	if (!children) {
+		if (!show) {
+			return null;
+		}
+
+		return <Base label={label} emphasized={emphasized} {...otherProps} />;
+	}
+
+	const childrenWiredProps = pick(otherProps, childrenWiredPropNames);
+	return (
+		<Container {...otherProps}>
+			<ChildrenContainer show={show} {...childrenWiredProps}>
+				{children}
+			</ChildrenContainer>
+
+			{show && (
+				<SpinnerContainer justifyContent="center" alignItems="center">
+					<Base label={label} emphasized={emphasized} />
+				</SpinnerContainer>
+			)}
+		</Container>
+	);
+};
