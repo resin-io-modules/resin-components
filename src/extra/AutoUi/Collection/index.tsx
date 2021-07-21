@@ -1,8 +1,6 @@
 import React from 'react';
 import { JSONSchema7 as JSONSchema } from 'json-schema';
 import isEqual from 'lodash/isEqual';
-import size from 'lodash/size';
-import intersectionBy from 'lodash/intersectionBy';
 import { Lenses, CollectionLenses } from './Lenses';
 import { Tags } from './Tags';
 import { Create } from './Actions/Create';
@@ -67,18 +65,6 @@ const HeaderGrid = styled(Flex)`
 		margin-right: 4px;
 	}
 `;
-
-const getSelectedItems = <T extends AutoUIBaseResource<T>>(
-	newItems: T[],
-	selectedItems: T[],
-) => {
-	if (!size(selectedItems)) {
-		return selectedItems;
-	}
-	// update the selections
-	selectedItems = intersectionBy(newItems, selectedItems, 'id');
-	return selectedItems;
-};
 
 export interface ActionData<T> {
 	action: AutoUIAction<T>;
@@ -228,10 +214,6 @@ export const AutoUICollection = <T extends AutoUIBaseResource<T>>({
 		() => (data ? filter(filters, data) : []) as T[],
 		[data, filters],
 	);
-
-	React.useEffect(() => {
-		setSelected((oldSelected) => getSelectedItems(oldSelected, filtered));
-	}, [filtered]);
 
 	const changeTags = React.useCallback(
 		async (tags: SubmitInfo<ResourceTagSubmitInfo, ResourceTagSubmitInfo>) => {
